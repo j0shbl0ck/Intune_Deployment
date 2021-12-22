@@ -1,6 +1,6 @@
 ﻿<#
 
-Author: Josh Block (jblock@trustinfinitech.com)
+Author: Josh Block
 Date: 12.17.21
 Source: https://www.pdq.com/blog/pdq-deploy-and-powershell/
 Description: This creates local desktop shortcuts of the M365 products.

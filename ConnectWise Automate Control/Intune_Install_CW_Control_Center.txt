@@ -1,0 +1,8 @@
+[Win 32]
+
+Install Command: ControlCenterInstaller.exe /s
+Uninstall Command: C:\Program Files (x86)\LabTech Client\unistall.exe /s
+
+Dection rules: 
+	File Path C:\Program Files (x86)\LabTech Client
+	File: ControlCenterInstaller.exe

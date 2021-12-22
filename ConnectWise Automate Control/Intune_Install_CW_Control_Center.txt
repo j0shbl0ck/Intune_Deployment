@@ -3,6 +3,6 @@
 Install Command: ControlCenterInstaller.exe /s
 Uninstall Command: C:\Program Files (x86)\LabTech Client\unistall.exe /s
 
-Dection rules: 
+Detection rules: 
 	File Path C:\Program Files (x86)\LabTech Client
 	File: ControlCenterInstaller.exe

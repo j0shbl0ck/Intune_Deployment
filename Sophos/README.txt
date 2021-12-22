@@ -1,5 +1,7 @@
 [Win32]
 
+You will need to download cliet specifed SophosSetup.exe file prior to deployment.
+
 1. Download client specific SophosSetup.exe
 2. Wrap file via IntuneWinAppUtil
 

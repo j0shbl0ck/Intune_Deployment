@@ -1,0 +1,1 @@
+Properly wrap SonicWall Extender folder with Source folder being the folder path, and the setup file being "install.ps1". 

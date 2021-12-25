@@ -1,4 +1,4 @@
-[Win32]
+[Win32 App]
 
 You will need to download cliet specifed SophosSetup.exe file prior to deployment.
 

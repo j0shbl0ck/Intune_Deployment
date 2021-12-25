@@ -1,4 +1,4 @@
-[MSI]
+[MSI App]
 
 To collect Command-line arguments, first download the custom msi agent for the provided client. Within the custom agent setup, take note of the SERVERPASS and LOCATION.
 

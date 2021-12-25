@@ -1,11 +1,9 @@
 <#
-
-Author: Josh Block 
+Author: J Block 
 Type: Public
 Date: 12.14.21
 Source: http://blog.petersenit.co.uk/2019/08/modern-management-part-nine-bginfo.html
 Description: Copies the BGInfo64.exe and custom.bgi onto device and runs on logon.
-
 #>
 
 

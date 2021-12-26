@@ -1,4 +1,4 @@
-[Win 32]
+[Win 32 App]
 
 This creates the M365 shortcuts on the desktop via PowerShell and Batch on startup everytime. You will need to add onto the list of applications in the Createlnk.ps1 script if desired. 
 

@@ -6,6 +6,7 @@
   * Source File: BGInfo64.exe
   
 Install command: ```powershell -ex bypass -file install.ps1```
+
 Uninstall command: ```powershell -ex bypass -file uninstall.ps1``` 
 
 Detection rules:

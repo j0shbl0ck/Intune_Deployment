@@ -7,8 +7,9 @@ This creates the M365 shortcuts on the desktop via PowerShell and Batch on start
   * Source Folder: Folder path containing all four files.
   * Setup File: install.ps1
   
-Install command: powershell -ex bypass -file install.ps1
-Uninstall command: powershell -ex bypass -file uninstall.ps1
+Install command: ```powershell -ex bypass -file install.ps1```
+
+Uninstall command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
   File Path: C:\MDM\Createlnk\

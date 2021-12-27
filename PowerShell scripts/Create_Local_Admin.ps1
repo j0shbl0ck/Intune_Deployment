@@ -14,7 +14,7 @@ $Password = ConvertTo-SecureString '<password>' -AsPlainText -Force
 Function Create_LocalAdmin
 {
 
-    New-LocalUser $ExpectedLocalUser -Password $Password -FullName "Local Admin" -Description "Local Administrator account."
+    New-LocalUser $ExpectedLocalUser -Password $Password -FullName "<First Last>" -Description "Local Administrator account."
     Add-LocalGroupMember -Group "Administrators" -Member $ExpectedLocalUser
     Set-LocalUser -Name $ExpectedLocalUser -PasswordNeverExpires:$true
 }

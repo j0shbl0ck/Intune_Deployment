@@ -7,8 +7,10 @@ Description: This script is made to hide folders and files from end user.
 #>
 
 ## This hides folders and files even with "view hidden folders on"
-attrib +s +h "C:\Users\Public\Desktop\Google Chrome.lnk"
+# Find out folder/file path location prior to listing file path below.
 
+attrib +s +h "C:\Users\Public\Desktop\Google Chrome.lnk"
+attrib +s +h "C:\Users\Public\Desktop\Test_Folder"
 attrib +s +h "C:\Users\Public\Desktop\Firefox.lnk"
 
 ## This unhides folders and files

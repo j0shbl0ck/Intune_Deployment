@@ -14,4 +14,4 @@ attrib +s +h "C:\Users\Public\Desktop\Test_Folder"
 attrib +s +h "C:\Users\Public\Desktop\Firefox.lnk"
 
 ## This unhides folders and files
-# attrib -s -h C:\Uasers\IntuneTest\Desktop\Google Chrome.lnk"
+# attrib -s -h C:\Users\Public\Desktop\Google Chrome.lnk"

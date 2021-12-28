@@ -1,9 +1,24 @@
 ﻿<#
-Author: J Block 
-Date: 12.21.21
-Type: Public
-Source: 
-Description: Creates local admin onto device. Use .\ to login into system. 
+    .NOTES
+    =============================================================================
+    Author: j0shbl0ck https://github.com/j0shbl0ck
+    Version: 1.0.1
+    Date: 12.21.21
+    Type: Public
+    Source: 
+    Description: Creates local admin onto device. Use .\ to login into system. 
+    =============================================================================
+    For Intune Purposes
+    -------------------
+    Run this script using the logged on credentials:
+        - No
+
+    Enforce script signature check:
+        - No
+
+    Run script in 64 bit PowerShell Host
+        - Yes
+    =============================================================================
 #>
 
 
@@ -39,15 +54,4 @@ Catch
 
 }
 
-<#
-For Intune Purposes
--------------------
-Run this script using the logged on credentials:
-No
 
-Enforce script signature check:
-No
-
-Run script in 64 bit PowerShell Host
-Yes
-#>

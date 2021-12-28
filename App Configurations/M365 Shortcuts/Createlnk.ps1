@@ -1,16 +1,18 @@
 ﻿<#
-Author: Josh Block
-Date: 12.17.21
-Source: https://www.pdq.com/blog/pdq-deploy-and-powershell/
-Description: This creates local desktop shortcuts of the M365 products.
-#>
-
-<#
-To find the source file location, please refer to creating a custom start menu. 
-1. Add all applications wanting to be seen on desktop, to the start menu
-2. Export start menu as .xml
-3. See file path locations on the .xml and insert into the $ShortcutFileLocaiton
-4. Export Shortcut location to desktop with $ShortcutLocation
+    .NOTES
+    =============================================================================
+    Author: j0shbl0ck https://github.com/j0shbl0ck
+    Version: 1.0.1
+    Date: 12.17.21
+    Type: Public
+    Source: -https://www.pdq.com/blog/pdq-deploy-and-powershell/
+    Description: This creates local desktop shortcuts of the M365 products.
+    =============================================================================
+    To find the source file location, please refer to creating a custom start menu. 
+        1. Add all applications wanting to be seen on desktop, to the start menu
+        2. Export start menu as .xml
+        3. See file path locations on the .xml and insert into the $ShortcutFileLocaiton
+        4. Export Shortcut location to desktop with $ShortcutLocation
 #>
 
 

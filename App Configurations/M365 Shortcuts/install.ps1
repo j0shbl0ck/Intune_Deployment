@@ -1,9 +1,13 @@
 ﻿<#
-Author: Josh Block
-Type: Public
-Date: 12.17.21
-Source: http://blog.petersenit.co.uk/2019/08/modern-management-part-nine-bginfo.html
-Description: Creates the file folder 
+    .NOTES
+    =============================================================================
+    Author: j0shbl0ck https://github.com/j0shbl0ck
+    Version: 1.0.1
+    Date: 12.17.21
+    Type: Public
+    Source: http://blog.petersenit.co.uk/2019/08/modern-management-part-nine-bginfo.html
+    Description: Creates the file folder 
+    =============================================================================
 #>
 
 #Creates new folder "Createlnk"

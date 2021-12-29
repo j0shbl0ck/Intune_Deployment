@@ -1,14 +1,21 @@
-[Win32 App]
+[Win 32 App]
 
-You will need to download cliet specifed SophosSetup.exe file prior to deployment.
+This runs the cliet specifed SophosSetup.exe file onto specified device(s).  
+1. Download the client specified SophosSetup.exe
+2. Wrap the SophosSetup.exe via IntuneWinAppUtil
 
-1. Download client specific SophosSetup.exe
-2. Wrap file via IntuneWinAppUtil
+**INTUNE WINAPPUTIL SETUP**
+---------------------
+Source Folder: Folder path containing SophosSetup.exe. 
 
-Install command: ```SophosSetup.exe --products=antivirus,intercept --quiet```
+Source File: SophosSetup.exe
 
-Uninstall command: ```%ProgramFiles%\Sophos\Sophos Endpoint Agent\uninstallcli.exe```
+**INTUNE APPLICATION SETUP**
+----------------------------
+Program setup:
+- Install Commmand: ```SophosSetup.exe --products=antivirus,intercept --quiet```
+- Uninstall Command: ```%ProgramFiles%\Sophos\Sophos Endpoint Agent\uninstallcli.exe```
 
 Detection rules:
-	File Path: %ProgramFiles%\Sophos\Sophos UI
-	File: SophosSetup.exe 
+- File Path: %ProgramFiles%\Sophos\Sophos UI
+- File: SophosSetup.exe

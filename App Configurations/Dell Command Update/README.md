@@ -4,7 +4,7 @@ Prior steps to extract the setup EXE:
 <ol>
     <li>Go to https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update</li>
     <li>Open PowerShell as admin, and redirect to the Folder where the, Dell-Command-Update-Application_XXXXX_WIN_x.x.x_A00.EXE is.</li>
-    <li>Run: .\Dell-Command-Update-Windows-Universal-Application_XXXX_WIN_x.x.x_A00.EXE /s /e=C:\DELLCOMMAND\</li>
+    <li>Run: <code>.\Dell-Command-Update-Windows-Universal-Application_XXXX_WIN_x.x.x_A00.EXE /s /e=C:\DELLCOMMAND\</code></li>
     <li>After extracting .exe (DellCommandUpdateApp_Setup.exe) begin Intune wrapping.</li>
 </ol>
 

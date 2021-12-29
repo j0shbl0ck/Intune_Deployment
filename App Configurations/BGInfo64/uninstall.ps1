@@ -16,5 +16,5 @@ Remove-Item -Path "C:\Program Files\BGInfo" -Recurse -Force -Confirm:$false
 # Removes application shortcut that was created with "install.ps1"
 Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\BGInfo.lnk" -Force -Confirm:$false
 
-# Success code for logging
+# Return code for logging
 Return 0

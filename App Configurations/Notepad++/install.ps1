@@ -10,7 +10,11 @@
     =============================================================================
 #>
 
+# Creates new folder on device
+New-Item -ItemType Directory -Force -Path "C:\MDM\NP+" | Out-Null
 
+# Copies source files onto device into newly created folder
+Copy-Item -Path "$PSScriptRoot\npp.8.1.9.3.Installer.x64.exe" -Destination "C:\MDM\NP+\npp.8.1.9.3.Installer.x64.exe"
 
-$Path = "C:\Users\IntuneTest\Desktop"
-start-process -FilePath "$Path\npp.8.1.9.3.Installer.x64.exe" -ArgumentList '/S' -Verb runas -Wait
+# Uses PowerShell to run scripts contained in source folder
+start-process -FilePath "C:\MDM\NP+\npp.8.1.9.3.Installer.x64.exe" -ArgumentList '/S' -Verb runas -Wait

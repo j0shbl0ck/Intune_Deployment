@@ -1,7 +1,8 @@
 [MSI App]
 
 Provided documentation on how to install ConnectWise Automate Remote Agent for specified client.  
-1. To collect Command-line arguments, first download the custom msi agent for the provided client. Within the custom agent setup, take note of the SERVERPASS and LOCATION.
+1. To collect Command-line arguments, first download the custom msi agent for the provided client. 
+2. Recommended to run on test device, run the .msi version of the agent to take note of the SERVERPASS and LOCATION.
 
 **INTUNE APPLICATION SETUP**
 ----------------------------

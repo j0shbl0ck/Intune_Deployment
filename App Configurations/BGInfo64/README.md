@@ -7,6 +7,7 @@ This pulls together BGInfo64.exe and your custom .bgi file to make it load on st
 **INTUNE WINAPPUTIL**
 ---------------------
 Source Folder: Folder path containing all four files. 
+
 Source File: BGInfo64.exe
 
 **INTUNE APPLICATION SETUP**

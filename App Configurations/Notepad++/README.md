@@ -13,6 +13,5 @@ Install command: ```powershell -ex bypass -file install.ps1```
 Uninstall command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-
-  File Path: C:\Program Files\Notepad++
-  File: notepad++.exe
+- File Path: C:\Program Files\Notepad++
+- File: notepad++.exe

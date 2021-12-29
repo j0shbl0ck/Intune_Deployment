@@ -1,20 +1,18 @@
 [Win 32 App]
 
-Prior steps to extract the setup EXE:
-<ol>
-    <li>Go to https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update</li>
-    <li>Open PowerShell as admin, and redirect to the Folder where the, Dell-Command-Update-Application_XXXXX_WIN_x.x.x_A00.EXE is.</li>
-    <li>Run: <code>.\Dell-Command-Update-Windows-Universal-Application_XXXX_WIN_x.x.x_A00.EXE /s /e=C:\DELLCOMMAND\</code></li>
-    <li>After extracting .exe (DellCommandUpdateApp_Setup.exe) begin Intune wrapping.</li>
-</ol>
+This runs the Notepad++ setup silently with no prompts or special configuration.  
 
-**Install Command**: ```DellCommandUpdateApp_Setup.exe /S /v/qn```
+1. Download all three files: install.ps1, uninstall.ps1, and most updated version of Notepad++
+2. Change version number in both **install.ps1** and **uninstall.ps1**
+2. Wrap all three files via IntuneWinAppUtil
+  * Source Folder: Folder path containing all three files.
+  * Setup File: install.ps1
+  
+Install command: ```powershell -ex bypass -file install.ps1```
 
-**Uninstall Command**: ```DellCommandUpdateApp_Setup.exe /S /x /v/qn```
+Uninstall command: ```powershell -ex bypass -file uninstall.ps1```
 
-Additional Notes: 
-<ul>
-    <li>As of now, currently unable to find proper uninstall file location.</li> 
-    <li>Noticed Microsoft does have Dell Command Update on the <a href="https://www.microsoft.com/en-us/p/dell-command-update/9n0k4b9pjt60">Microsoft store</a>
-        so this may be another method in adding the application to the device.</li>
-</ul>
+Detection rules:
+
+  File Path: C:\Program Files\Notepad++
+  File: notepad++.exe

@@ -3,8 +3,11 @@
 This pulls together BGInfo64.exe and your custom .bgi file to make it load on startup.  
 1. Download all four files and replace [Workstation.bgi] with your custom .bgi file.
 2. Wrap files via IntuneWinAppUtil.
-  * Source Folder: Folder path containing all four files. 
-  * Source File: BGInfo64.exe
+
+**INTUNE WINAPPUTIL**
+---------------------
+Source Folder: Folder path containing all four files. 
+Source File: BGInfo64.exe
 
 **INTUNE APPLICATION SETUP**
 ----------------------------

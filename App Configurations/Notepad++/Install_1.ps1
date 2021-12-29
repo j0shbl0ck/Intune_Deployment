@@ -1,0 +1,16 @@
+<#
+    .NOTES
+    =============================================================================
+    Author: j0shbl0ck https://github.com/j0shbl0ck
+    Version: 1.0.1
+    Date: 12.29.21
+    Type: Public
+    Source: https://stackoverflow.com/questions/50274909/unattended-silent-install-notepad
+    Description: Installs Notepad++ onto device.
+    =============================================================================
+#>
+
+
+
+$Path = "C:\Users\IntuneTest\Desktop"
+start-process -FilePath "$Path\npp.8.1.9.3.Installer.x64.exe" -ArgumentList '/S' -Verb runas -Wait

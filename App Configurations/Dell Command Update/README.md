@@ -14,7 +14,7 @@ Prior steps to extract the setup EXE:
 
 Additional Notes: 
 <ul>
-    <li>As of now, currently unable to find proper uninstall file location.<li> 
+    <li>As of now, currently unable to find proper uninstall file location.</li> 
     <li>Noticed Microsoft does have Dell Command Update on the <a href="https://www.microsoft.com/en-us/p/dell-command-update/9n0k4b9pjt60">Microsoft store</a>
         so this may be another method in adding the application to the device.</li>
 </ul>

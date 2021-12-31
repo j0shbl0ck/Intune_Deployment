@@ -4,9 +4,12 @@ This runs the Notepad++ setup silently with no prompts or special configuration.
 1. Download all three files: install.ps1, uninstall.ps1, and most updated version of Notepad++
 2. Change version number in both **install.ps1** and **uninstall.ps1**
 2. Wrap all three files via IntuneWinAppUtil
-  * Source Folder: Folder path containing all three files.
-  * Setup File: install.ps1
 
+**INTUNE WINAPPUTIL SETUP**
+---------------------
+Source Folder: Folder path containing all three files.
+
+Source File: install.ps1
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:

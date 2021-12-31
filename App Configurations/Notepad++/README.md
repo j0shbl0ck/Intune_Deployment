@@ -10,6 +10,7 @@ This runs the Notepad++ setup silently with no prompts or special configuration.
 Source Folder: Folder path containing all three files.
 
 Source File: install.ps1
+
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:

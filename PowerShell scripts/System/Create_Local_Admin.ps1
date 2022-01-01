@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.1
+    Version: 1.0.2
     Date: 12.21.21
     Type: Public
     Source: 
@@ -21,7 +21,7 @@
     =============================================================================
 #>
 
-
+## For new PS scripters, leave the qoutes, but replace <text>.
 
 $ExpectedLocalUser = "<username>"
 $Password = ConvertTo-SecureString '<password>' -AsPlainText -Force

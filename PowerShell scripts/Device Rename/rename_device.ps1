@@ -14,3 +14,12 @@
         three files, the "deploy_setup.ps1","rename_device.ps1", and "device_name_list.csv". Resort to the README.md on github for application deployment.  
 #>
 
+## Uses the headers OldName and NewName to differentiate what to rename PC to.
+
+$callcsv = import-csv -Path "C:\MDM\DeviceRename\device_name_list.csv" 
+
+foreach ($OldName in $callcsv)
+{
+    Rename-Computer -ComputerName $callcsv.OldName -NewName $callcsv.NewName
+    restart-computer $callcsv.OldName
+}

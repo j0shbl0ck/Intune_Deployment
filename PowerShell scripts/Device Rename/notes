@@ -1,0 +1,5 @@
+Deploy_setup.ps1 will copy over other three files and then run "rename_device"
+
+"rename_device.ps1" will rename device and force restart.
+
+place .bat file into startup to remove all files after device rename restart

@@ -1,9 +1,13 @@
 ﻿<#
-Author: J Block 
-Date: 12.21.21
-Type: Public
-Source: 
-Description: Copies the SonicWall NetExtender application and registy profile key.
+    .NOTES
+    =============================================================================
+    Author: j0shbl0ck https://github.com/j0shbl0ck
+    Version: 1.0.1
+    Date: 12.21.21
+    Type: Public
+    Source: https://stackoverflow.com/questions/50274909/unattended-silent-install-notepad
+    Description: Copies the SonicWall NetExtender application and registy profile key.
+    =============================================================================
 #>
 
 ##Copies files to the newly created folder "SonicWallNetExtender" located in C:\MDM

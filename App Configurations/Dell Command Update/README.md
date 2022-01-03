@@ -19,11 +19,12 @@ Program setup:
 - Uninstall Command: ```DellCommandUpdateApp_Setup.exe /S /x /v/qn``` 
 
 Detection rules:
-- File Path: C:\Program Files\Dell\CommandUpdate
-- File: dcu-cli.exe
+- File Path: C:\Windows
+- File: System32
 
 **ADDITIONAL NOTES**
 --------------------
+- Yes, the detection rules are set to the Windows folder. Currently unable to find the source file for Dell Command Updates, so I chose a common folder. 
 - As of now, currently unable to find proper uninstall file location.
 - Noticed Microsoft does have Dell Command Update on the [Microsoft store](https://www.microsoft.com/en-us/p/dell-command-update/9n0k4b9pjt60) so this may be another method in adding the application to the device.
 

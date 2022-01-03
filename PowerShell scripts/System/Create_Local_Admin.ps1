@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 12.21.21
     Type: Public
     Source: 
@@ -22,6 +22,7 @@
 #>
 
 ## For new PS scripters, leave the qoutes, but replace <text>.
+## Run this script in PowerShell ISE as admin to properly edit the script.
 
 $ExpectedLocalUser = "<username>"
 $Password = ConvertTo-SecureString '<password>' -AsPlainText -Force

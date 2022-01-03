@@ -4,7 +4,7 @@
 CONSOLESTATE /Hide 
 
 :: This removes the DeviceRename folder created.
-rmdir "C:\MDM\DeviceRename" /Q
+rmdir C:\MDM\DeviceRename /Q
 
 echo Y
 

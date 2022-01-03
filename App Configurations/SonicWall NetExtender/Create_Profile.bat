@@ -1,3 +1,4 @@
+:: Version 1.0.0
 :: This batch file first excutes the profile.ps1 script to add the profile within the SonicWall registry. 
     :: Afterwards, it closes the SonicWall service in order for it to properly appear when a user opens the application.
         :: Once the script is excuted and service is killed, the batch file self destructs as the profile is now added to the device. 

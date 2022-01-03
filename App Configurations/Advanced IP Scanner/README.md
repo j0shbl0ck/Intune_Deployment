@@ -16,3 +16,5 @@ Detection rules:
 
 
 https://silentinstallhq.com/advanced-ip-scanner-silent-install-how-to-guide/
+
+MsiExec.exe /i ip_scan_en_us_Release_2.5.3850.msi /qn

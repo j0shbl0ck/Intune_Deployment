@@ -1,3 +1,4 @@
+:: Version 1.0.0
 :: Batch file runs on startup to execult the provided PowerShell script below. 
 
 CONSOLESTATE /Hide 

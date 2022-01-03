@@ -24,7 +24,7 @@ Copy-Item –Path "$PSScriptRoot\rename_device.ps1" –Destination "C:\MDM\Devic
 #Copies "rename_device" to DeviceRename folder
 Copy-Item –Path "$PSScriptRoot\device_name_list.csv" –Destination "C:\MDM\DeviceRename\device_name_list.csv" 
 
-#Copies "Createlnk.bat" to Startup folder within C: folder.
+#Copies "remove_files.bat" to Startup folder within C: folder.
 Copy-Item –Path "$PSScriptRoot\remove_files.bat" –Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
 
 ## Once all three files are copied, then the script will execute the "rename_device.ps1"

@@ -13,3 +13,6 @@ Program setup:
 Detection rules:
 - File Path: C:\Program Files (x86)\Advanced IP Scanner\
 - File: advanced_ip_scanner.exe
+
+
+https://silentinstallhq.com/advanced-ip-scanner-silent-install-how-to-guide/

@@ -33,5 +33,5 @@ Copy-Item –Path "$PSScriptRoot\run_script.bat" –Destination "C:\MDM\DeviceRe
 ## Once all three files are copied, then the script will execute the "rename_device.ps1"
 
 # Runs batch file to then run "rename_device.ps1"
-Start-Process -window Minimized "C:\MDM\DeviceRename\run_script.bat" 
+#Start-Process -window Minimized "C:\MDM\DeviceRename\run_script.bat" 
 

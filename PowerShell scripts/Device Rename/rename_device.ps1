@@ -23,3 +23,24 @@ foreach ($OldName in $callcsv)
     Rename-Computer -ComputerName $callcsv.OldName -NewName $callcsv.NewName
     restart-computer $callcsv.OldName
 }
+
+<#
+
+# Script to rename computers in a domain by parsing a CSV file 
+# Assumes: File of names with a header row of OldName,NewName
+# and a row for oldname,newname pairs for each computer to be renamed.
+# Adjust filename and file path as appropriate. 
+  
+$csvfile = "C:\Users\IntuneTest\Desktop\Device_Rename\device_name_list.csv"
+Import-Csv $csvfile | foreach { 
+$oldName = $_.oldname;
+$newName = $_.newname;
+
+Rename-Computer -ComputerName $oldName -NewName $newName #-DomainCredential Domain01\Admin01 -Force 
+
+}
+
+
+
+
+#>

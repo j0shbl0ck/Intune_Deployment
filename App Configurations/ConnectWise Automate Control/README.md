@@ -13,7 +13,7 @@ Source File: ControlCenterInstaller.exe
 ----------------------------
 Program setup:
 - Install Commmand: ```ControlCenterInstaller.exe /s```
-- Uninstall Command: ```C:\Program Files (x86)\LabTech Client\unistall.exe /s``` 
+- Uninstall Command: ```C:\Program Files (x86)\LabTech Client\uninstall.exe /s``` 
 
 Detection rules:
 - File Path: C:\Program Files (x86)\LabTech Client

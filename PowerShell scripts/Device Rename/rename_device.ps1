@@ -20,8 +20,8 @@
 # and a row for oldname,newname pairs for each computer to be renamed.
 # Adjust filename and file path as appropriate. 
   
-$csvfile = "C:\Users\IntuneTest\Desktop\Device_Rename\device_name_list.csv"
-Import-Csv $csvfile | foreach { 
+$csvfile = "C:\MDM\DeviceRename\device_name_list.csv"
+Import-Csv $csvfile | ForEach-Object { 
 $oldName = $_.oldname;
 $newName = $_.newname;
 

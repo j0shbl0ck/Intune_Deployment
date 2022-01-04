@@ -1,10 +1,10 @@
-:: Version 1.0.3
+:: Version 1.0.4
 :: This batch file excutes on startup to remove the folders and files below. In a sense, it removes the folder, then self distructs itself. 
 
 CONSOLESTATE /Hide 
 
 :: This removes the DeviceRename folder created.
-rmdir C:\MDM\DeviceRename /Q
+rmdir /s C:\MDM\DeviceRename /Q
 
 echo Y
 

@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.3
+    Version: 1.0.4
     Date: 12.31.21
     Type: Public
     Source: https://social.technet.microsoft.com/wiki/contents/articles/2243.how-to-rename-computers-using-powershell-and-a-csv-file.aspx 
@@ -27,12 +27,11 @@ Copy-Item –Path "$PSScriptRoot\device_name_list.csv" –Destination "C:\MDM\De
 #Copies "remove_files.bat" to Startup folder within C: folder.
 Copy-Item –Path "$PSScriptRoot\remove_files.bat" –Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
 
+#Copies "remove_files.bat" to Startup folder within C: folder.
+Copy-Item –Path "$PSScriptRoot\run_script.bat" –Destination "C:\MDM\DeviceRename\run_script.bat"
+
 ## Once all three files are copied, then the script will execute the "rename_device.ps1"
 
-### Solution 1
-## Reset files and see why C:\MDM\DeviceRename\rename_device.ps1 won't run through this script. 
-
-### Solution 2
-## Change setup file in Intune wrap to be rename_device.ps1
-Powershell.exe -File "C:\MDM\DeviceRename\rename_device.ps1"
+# Runs batch file to then run "rename_device.ps1"
+Start-Process -window Minimized C:\MDM\DeviceRename\run_script.bat 
 

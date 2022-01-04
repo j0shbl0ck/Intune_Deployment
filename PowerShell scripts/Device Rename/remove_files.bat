@@ -1,4 +1,4 @@
-:: Version 1.0.4
+:: Version 1.0.5
 :: This batch file excutes on startup to remove the folders and files below. In a sense, it removes the folder, then self distructs itself. 
 
 CONSOLESTATE /Hide 

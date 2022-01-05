@@ -17,5 +17,5 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-- File Path: C:\MDM\DeviceRename
-- File: device_name_list.csv
+- Path: C:\
+- File or folder: MDM

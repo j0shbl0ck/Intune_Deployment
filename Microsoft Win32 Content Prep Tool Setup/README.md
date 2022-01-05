@@ -1,5 +1,3 @@
-
-
 Setting up Microsoft Win32 Content Prep Tool.
 
 1. Download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730)

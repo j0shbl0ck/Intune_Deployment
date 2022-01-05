@@ -3,7 +3,7 @@
 Setting up Microsoft Win32 Content Prep Tool.
 
 1. Download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730)
-2. Create a folder where all Intune wrapping will take place. I choose <b>C:\IntuneWinAppUtil</b>
+2. Create a folder where all Intune wrapping will take place. I chose <b>C:\IntuneWinAppUtil</b>
 3. In this folder, place the <b>IntuneWinAppUtil.exe</b> inside, and also create the folders <b>Source</b> and <b>Output</b> 
 * The Source folder will host your current project folders that hold your .exe(s) and scripts. 
 * The Output folder will contain the .intunewin file to upload to Microsoft Endpoint Manager

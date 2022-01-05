@@ -17,5 +17,5 @@ Program setup:
 - Uninstall Command: ```%ProgramFiles%\Sophos\Sophos Endpoint Agent\uninstallcli.exe```
 
 Detection rules:
-- File Path: %ProgramFiles%\Sophos\Sophos UI
-- File: SophosSetup.exe
+- Path: %ProgramFiles%\Sophos\Sophos UI
+- File or folder: SophosSetup.exe

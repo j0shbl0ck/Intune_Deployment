@@ -11,5 +11,5 @@ Program setup:
 - Uninstall Command: ```msiexec /x “{AC76BA86-7AD7-1033-7B44-AC0F074E4100}” /q```
 
 Detection rules:
-- File Path: C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\
-- File: AcroRd32.exe
+- Path: C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\
+- File or folder: AcroRd32.exe

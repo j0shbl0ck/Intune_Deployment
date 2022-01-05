@@ -11,5 +11,5 @@ Program setup:
 - Uninstall Command: ```Start-Process 'C:\Windows\System32\msiexec.exe' "/X{62D93E3E-2F8E-42BD-9343-896F4F0031D3} /qn /norestart" -Wait```
 
 Detection rules:
-- File Path: C:\Program Files (x86)\Quicken
-- File: qw.exe
+- Path: C:\Program Files (x86)\Quicken
+- File or folder: qw.exe

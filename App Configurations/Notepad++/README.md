@@ -18,5 +18,5 @@ Program setup:
 - Uninstall command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-- File Path: C:\Program Files\Notepad++
-- File: notepad++.exe
+- Path: C:\Program Files\Notepad++
+- File or folder: notepad++.exe

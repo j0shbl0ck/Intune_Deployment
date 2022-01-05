@@ -17,5 +17,5 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-- File Path: C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender\
-- File: NEGui.exe
+- Path: C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender\
+- File or folder: NEGui.exe

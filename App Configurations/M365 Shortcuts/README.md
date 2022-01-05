@@ -17,5 +17,5 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-- File Path: C:\MDM\Createlnk\
-- File: Createlnk.ps1
+- Path: C:\MDM\Createlnk\
+- File or folder: Createlnk.ps1

@@ -16,5 +16,5 @@ Program setup:
 - Uninstall Command: ```C:\Program Files (x86)\LabTech Client\uninstall.exe /s``` 
 
 Detection rules:
-- File Path: C:\Program Files (x86)\LabTech Client
-- File: ControlCenterInstaller.exe
+- Path: C:\Program Files (x86)\LabTech Client
+- File or folder: ControlCenterInstaller.exe

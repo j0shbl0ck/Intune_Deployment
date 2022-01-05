@@ -19,8 +19,8 @@ Program setup:
 - Uninstall Command: ```DellCommandUpdateApp_Setup.exe /S /x /v/qn``` 
 
 Detection rules:
-- File Path: C:\Windows
-- File: System32
+- Path: C:\Windows
+- File or folder: System32
 
 **ADDITIONAL NOTES**
 --------------------

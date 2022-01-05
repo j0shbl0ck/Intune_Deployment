@@ -8,7 +8,7 @@ This runs the Quicken accounting software.
 ----------------------------
 Program setup:
 - Install Commmand: ```AcroRdrDC2100720099_en_US.exe /sAll /rs /rps /msi /norestart /quiet EULA_ACCEPT=YES```
-- Uninstall Command: ```msiexec.exe /x {62D93E3E-2F8E-42BD-9343-896F4F0031D3} /q```
+- Uninstall Command: ```Start-Process 'C:\Windows\System32\msiexec.exe' "/X{62D93E3E-2F8E-42BD-9343-896F4F0031D3} /qn /norestart" -Wait```
 
 Detection rules:
 - File Path: C:\Program Files (x86)\Quicken

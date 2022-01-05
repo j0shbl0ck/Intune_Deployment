@@ -17,5 +17,5 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-- Path: C:\
-- File or folder: MDM
+- Path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\
+- File or folder: remove_files.bat

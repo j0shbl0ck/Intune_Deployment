@@ -9,6 +9,7 @@ Setting up Microsoft Win32 Content Prep Tool.
 * The Output folder will contain the .intunewin file to upload to Microsoft Endpoint Manager
 4. You could always navigate to C:\IntuneWinAppUtil to access IntuneWinAppUtil.exe, or, create a script that will open the .exe from any location on the desktop.
 5. Open PowerShell ISE and enter in the following: 
-Set-Location C:\IntuneWinAppUtil
-.\IntuneWinAppUtil.exe
+
+```Set-Location C:\IntuneWinAppUtil``
+```.\IntuneWinAppUtil.exe```
 

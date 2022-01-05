@@ -17,10 +17,10 @@
 #>
 
 #Creates new folder "Createlnk"
-New-Item –ItemType Directory –Force –Path "C:\MDM\DeviceRename" | Out-Null
+New-Item -ItemType Directory –Force –Path "C:\MDM\DeviceRename" | Out-Null
 
 #Copies "rename_device" to DeviceRename folder
-Copy-Item –Path "$PSScriptRoot\rename_device.ps1" –Destination "C:\MDM\DeviceRename\rename_device.ps1" 
+Copy-Item -Path "$PSScriptRoot\rename_device.ps1" –Destination "C:\MDM\DeviceRename\rename_device.ps1" 
 
 #Copies "rename_device" to DeviceRename folder
 Copy-Item -Path "$PSScriptRoot\device_name_list.csv" –Destination "C:\MDM\DeviceRename\device_name_list.csv" 

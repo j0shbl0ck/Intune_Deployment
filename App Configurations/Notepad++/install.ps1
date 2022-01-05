@@ -17,7 +17,7 @@ New-Item -ItemType Directory -Force -Path "C:\MDM\NP+" | Out-Null
 Copy-Item -Path "$PSScriptRoot\npp.8.1.9.2.Installer.x64.exe" -Destination "C:\MDM\NP+\npp.8.1.9.2.Installer.x64.exe"
 
 # Copies batch file into startup folder
-Copy-Item –Path "$PSScriptRoot\remove_files.bat" –Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
+Copy-Item -Path "$PSScriptRoot\remove_files.bat" –Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
 
 # Uses PowerShell to run scripts contained in source folder
 start-process -FilePath "C:\MDM\NP+\npp.8.1.9.2.Installer.x64.exe" -ArgumentList '/S' -Verb runas -Wait

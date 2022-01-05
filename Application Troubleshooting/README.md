@@ -1,6 +1,13 @@
+<h1>APPLICATION TROUBLESHOOOTING</h1>
+This folder contains troubleshooting scripts and applications to better assist an admin in removing applications from a device. Applications and scripts are <b>AS IS</b> and provide no libaility to a device.
+
 **Find_Product_Code.ps1**
 
 This finds the product code of the software to perform "msiexec" functions in PowerShell. Note, you may not always be able to find your software.
+
+**MCPR.exe**
+
+This uninstalls all McAfee bloatware on a device. 
 
 **MicrosoftProgram_Install_and_Uninstall**
 

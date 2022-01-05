@@ -11,4 +11,6 @@ Setting up Microsoft Win32 Content Prep Tool.
 5. Open PowerShell ISE and enter in the following: 
 * ```Set-Location C:\IntuneWinAppUtil```
 * ```.\IntuneWinAppUtil.exe```
+6. Save this script to your Desktop or elsewhere that is quickly accessible. 
+7. When ready, right click on your script and select, <b>Run with Powershell</b>.
 

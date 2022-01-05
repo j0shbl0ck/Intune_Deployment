@@ -17,23 +17,22 @@
 #>
 
 #Creates new folder "Createlnk"
-New-Item -ItemType Directory –Force –Path "C:\MDM\DeviceRename" | Out-Null
+New-Item -ItemType Directory -Force -Path "C:\MDM\DeviceRename" | Out-Null
 
 #Copies "rename_device" to DeviceRename folder
-Copy-Item -Path "$PSScriptRoot\rename_device.ps1" –Destination "C:\MDM\DeviceRename\rename_device.ps1" 
+Copy-Item -Path "$PSScriptRoot\rename_device.ps1" -Destination "C:\MDM\DeviceRename\rename_device.ps1" 
 
 #Copies "rename_device" to DeviceRename folder
-Copy-Item -Path "$PSScriptRoot\device_name_list.csv" –Destination "C:\MDM\DeviceRename\device_name_list.csv" 
+Copy-Item -Path "$PSScriptRoot\device_name_list.csv" -Destination "C:\MDM\DeviceRename\device_name_list.csv" 
 
 #Copies "remove_files.bat" to Startup folder within C: folder.
-Copy-Item -Path "$PSScriptRoot\remove_files.bat" –Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
+Copy-Item -Path "$PSScriptRoot\remove_files.bat" -Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
 
 #Copies "run_script.bat" to Startup folder within C: folder.
-Copy-Item -Path "$PSScriptRoot\run_script.bat" –Destination "C:\MDM\DeviceRename\run_script.bat"
-
-Copy-Item -Path 
+Copy-Item -Path "$PSScriptRoot\run_script.bat" -Destination "C:\MDM\DeviceRename\run_script.bat"
 
 ## Once all three files are copied, then the script will execute the "rename_device.ps1"
+Powershell.exe -File "C:\MDM\DeviceRename\rename_device.ps1"
 
 # Runs batch file to then run "rename_device.ps1"
 #Start-Process -window Minimized "C:\MDM\DeviceRename\run_script.bat" 

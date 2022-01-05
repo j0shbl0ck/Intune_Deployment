@@ -25,7 +25,7 @@ Import-Csv $csvfile | ForEach-Object {
 $oldName = $_.oldname;
 $newName = $_.newname;
 
-Rename-Computer -ComputerName $oldName -NewName $newName #-DomainCredential Domain01\Admin01 -Force 
-
+# Matches device old name to new name then restarts.
+Rename-Computer -ComputerName $oldName -NewName $newName <#-DomainCredential Domain01\Admin01 #> -Restart
 }
 

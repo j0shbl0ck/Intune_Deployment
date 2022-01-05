@@ -12,7 +12,7 @@
     =============================================================================
     .README
     It is possible to rename a device via Intune, but varying on Azure join type, it may not be. This script is wrapped as an Win32 App via IntuneWinAppUtil. It will contain
-        four files, the "rename_device.ps1","device_name_list.csv", and "remove_files.bat". Resort to the README.md on github for application deployment.  
+        three files, the "rename_device.ps1","device_name_list.csv", and "remove_files.bat". Resort to the README.md on github for application deployment.  
     =============================================================================
 #>
 

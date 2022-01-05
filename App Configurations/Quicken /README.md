@@ -1,7 +1,7 @@
 [Win 32 App]
 
 This runs the Quicken accounting software.  
-1. Download the latest version of Adobe Acrobat Reader DC: https://get.adobe.com/reader/
+1. Download the latest version of Adobe Acrobat Reader DC: https://www.quicken.com/support/download-install
 2. Wrap the file via IntuneWinAppUtil
 
 **INTUNE APPLICATION SETUP**

@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.5
+    Version: 1.0.6
     Date: 12.31.21
     Type: Public
     Source: https://social.technet.microsoft.com/wiki/contents/articles/2243.how-to-rename-computers-using-powershell-and-a-csv-file.aspx 
@@ -29,7 +29,7 @@ Copy-Item -Path "$PSScriptRoot\device_name_list.csv" -Destination "C:\MDM\Device
 Copy-Item -Path "$PSScriptRoot\remove_files.bat" -Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\remove_files.bat"
 
 #Copies "run_script.bat" to Startup folder within C: folder.
-Copy-Item -Path "$PSScriptRoot\run_script.bat" -Destination "C:\MDM\DeviceRename\run_script.bat"
+#Copy-Item -Path "$PSScriptRoot\run_script.bat" -Destination "C:\MDM\DeviceRename\run_script.bat"
 
 ## Once all three files are copied, then the script will execute the "rename_device.ps1"
 Powershell.exe -File "C:\MDM\DeviceRename\rename_device.ps1"

@@ -17,5 +17,5 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1``` 
 
 Detection rules:
-- File Path: C:\Program Files\BGInfo
-- File: Workstations.bgi
+- Path: C:\Program Files\BGInfo
+- File or folder: Workstations.bgi

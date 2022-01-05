@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 12.31.21
     Type: Public
     Source: https://social.technet.microsoft.com/wiki/contents/articles/2243.how-to-rename-computers-using-powershell-and-a-csv-file.aspx 
@@ -26,6 +26,6 @@ $oldName = $_.oldname;
 $newName = $_.newname;
 
 # Matches device old name to new name then restarts.
-Rename-Computer -ComputerName $oldName -NewName $newName <#-DomainCredential Domain01\Admin01 #> -Restart
+Rename-Computer -ComputerName $oldName -NewName $newName <#-DomainCredential Domain01\Admin01 #> -Force -Restart
 }
 

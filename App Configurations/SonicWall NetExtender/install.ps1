@@ -15,6 +15,7 @@ $software = "{EF06A6A8-6B81-4A09-8223-789953972FFF}"
 $installed = (Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$software) 
 
 If($null -eq $installed) {
+
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\SonicWallNetExtender" | Out-Null
 
@@ -29,6 +30,7 @@ Copy-Item -Path "$PSScriptRoot\Create_Profile.bat" -Destination "C:\ProgramData\
 
 #This installs SonicWall NetExtender. Note, this does a restart! If you perform /norestart the file will not install correct.
 msiexec /i "C:\MDM\SonicWallNetExtender\NetExtender-10.2.315.msi" /q 
+
 } else {
     New-Item C:\test.txt
     #stop-process -ID $PID 

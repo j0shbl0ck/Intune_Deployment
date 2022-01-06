@@ -32,7 +32,7 @@ Copy-Item -Path "$PSScriptRoot\Create_Profile.bat" -Destination "C:\ProgramData\
 msiexec /i "C:\MDM\SonicWallNetExtender\NetExtender-10.2.315.msi" /q 
 
 } else {
-    New-Item -ItemType Directory -Force -Path "C:\TEst"
+    New-Item -ItemType Directory -Force -Path "C:\Test" | Out-Null
     #stop-process -ID $PID 
 }
 

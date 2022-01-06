@@ -17,7 +17,8 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:
-**Due to all files being removed after install, Intune throws error "The application was not detected after installation completed successfully. To resolve this, I have Intune targeting the well-know explore.exe that is contained in the system. You will need to manually check the device in seeing if the name updated.**
+
+*Due to all files being removed after install, Intune throws error "The application was not detected after installation completed successfully. To resolve this, I have Intune targeting the well-know explore.exe that is contained in the system. You will need to manually check the device in seeing if the name updated.*
 - Path: C:\Windows\
 - File or folder: explorer.exe
 

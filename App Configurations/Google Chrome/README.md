@@ -18,13 +18,9 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file uninstall.ps1``` 
 
 Detection rules:
-- Path: C:\Windows
-- File or folder: System32
+- Path: C:\Program Files\Google\Chrome\Application\
+- File or folder: chrome.exe
 
-**ADDITIONAL NOTES**
---------------------
-- Yes, the detection rules are set to the Windows folder. Currently unable to find the source file for Dell Command Updates, so I chose a common folder. 
-- As of now, currently unable to find proper uninstall file location.
-- Noticed Microsoft does have Dell Command Update on the [Microsoft store](https://www.microsoft.com/en-us/p/dell-command-update/9n0k4b9pjt60) so this may be another method in adding the application to the device.
+
 
 

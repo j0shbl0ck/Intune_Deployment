@@ -1,0 +1,1 @@
+Start-Process 'C:\Windows\System32\msiexec.exe' "/X{B01A8859-9D45-3472-AD5D-0FB367564035} /qn /norestart" -Wait

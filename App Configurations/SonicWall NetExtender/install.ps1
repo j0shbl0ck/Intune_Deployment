@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.3
+    Version: 1.0.4
     Date: 12.21.21
     Type: Public
     Source: https://stackoverflow.com/questions/50274909/unattended-silent-install-notepad
@@ -32,6 +32,7 @@ Copy-Item -Path "$PSScriptRoot\Create_Profile.bat" -Destination "C:\ProgramData\
 msiexec /i "C:\MDM\SonicWallNetExtender\NetExtender-10.2.315.msi" /q 
 
 } else {
+    # This shuts down powershell, if application is already installed.
     stop-process -ID $PID 
 }
 

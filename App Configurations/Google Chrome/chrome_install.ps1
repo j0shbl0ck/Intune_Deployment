@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 01.07.22
     Type: Public
     Source: --
@@ -29,10 +29,10 @@ Copy-Item -Path "$PSScriptRoot\googlechromestandaloneenterprise64.msi" -Destinat
 MsiExec /i "C:\MDM\GoogleChrome\googlechromestandaloneenterprise64.msi" /qn
 
 # Wait for the installation of Google Chrome to deploy. 
-Start-Sleep -s 240
+Start-Sleep -s 60
 
 # Removes Google Chrome setup folder from main MDM folder. 
-Remove-Item "C:\MDM\GoogleChrome\" -ErrorAction Stop
+Remove-Item "C:\MDM\GoogleChrome\" -Force -Recurse
 
 } else {
     # This shuts down powershell, if application is already installed.

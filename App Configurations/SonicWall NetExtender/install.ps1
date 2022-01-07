@@ -32,14 +32,7 @@ Copy-Item -Path "$PSScriptRoot\Create_Profile.bat" -Destination "C:\ProgramData\
 msiexec /i "C:\MDM\SonicWallNetExtender\NetExtender-10.2.315.msi" /q 
 
 } else {
-    $SourceFileLocation = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Excel.lnk"
-    $ShortcutLocation = "$env:USERPROFILE\Desktop\Excel.lnk"
-    $WScriptShell = New-Object -ComObject WScript.Shell
-    $Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)
-    $Shortcut.TargetPath = $SourceFileLocation
-    $Shortcut.Save()
-    #New-Item -ItemType Directory -Force -Path "C:\Popstarter" | Out-Null
-    #stop-process -ID $PID 
+    stop-process -ID $PID 
 }
 
 

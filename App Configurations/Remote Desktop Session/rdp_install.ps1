@@ -12,16 +12,15 @@
     Please resort to README.md for additional file setup. 
 #>
 
-# Checks File Explorer if Google Chrome is present on device
-$installed = (Get-ChildItem "$($env:USERPROFILE)\Desktop\QuoteWerks.rdp")
+# Checks if RDP Session is present on device
+$installed = (Get-ChildItem "C:\RDP_Sessions\QuoteWerks.rdp")
 
 ## BEGIN IF ELSE STATEMENT
 
 If($null -eq $installed) {
 
 # Copies RDP session file onto desktop.
-Copy-Item -Path "$PSScriptRoot\QuoteWerks.rdp" -Destination "$($env:USERPROFILE)\Desktop\QuoteWerks.rdp"
-
+Copy-Item -Path "$PSScriptRoot\QuoteWerks.rdp" -Destination "C:\RDP_Sessions\QuoteWerks.rdp"
 
 } else {
     # This shuts down powershell, if application is already installed.

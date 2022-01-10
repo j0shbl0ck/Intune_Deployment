@@ -1,6 +1,6 @@
 [Win 32 App]
 
-This deploys the Google Chrome Enterprise application. First checks if Google Chrome is alreayd installed prior.   
+This deploys the Google Chrome Enterprise application. First checks if Google Chrome is already installed prior.   
 1. Go to https://chromeenterprise.google/ 
 2. Download .MSI version of Google Chrome. 
 3. Put together scripts and .msi in folder to begin Intune wrapping.

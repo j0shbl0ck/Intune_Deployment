@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.4
+    Version: 1.0.5
     Date: 12.29.21
     Type: Public
     Source: https://stackoverflow.com/questions/50274909/unattended-silent-install-notepad

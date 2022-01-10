@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 01.10.22
     Type: Public
     Source: --

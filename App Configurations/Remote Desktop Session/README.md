@@ -17,7 +17,7 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file rdp_uninstall.ps1``` 
 
 Detection rules:
-- Path: C:\RDP_Sessions\
+- Path: C:\RDP_Sessions\QuoteWerks\
 - File or folder: QuoteWerks.rdp
 
 

@@ -2,7 +2,8 @@
 
 This deploys a custom RDP session file of your choice.    
 1. Ensure RDP name is renamed to your RDP session file name in script.
-2. Put together scripts and .msi in folder to begin Intune wrapping.
+2. Put together scripts and RDP session file in folder to begin Intune wrapping.
+3. Change Detection rules to renamed folders. 
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------

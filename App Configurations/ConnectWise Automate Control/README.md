@@ -1,7 +1,7 @@
 [Win 32 App]
 
 Provided documentation on how to install ConnectWise Automate Control.  
-1. Wrap files via IntuneWinAppUtil.
+1. Wrap file via IntuneWinAppUtil.
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------

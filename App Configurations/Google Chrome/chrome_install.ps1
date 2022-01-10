@@ -2,8 +2,8 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.1
-    Date: 01.07.22
+    Version: 1.0.2
+    Date: 01.10.22
     Type: Public
     Source: --
     Description: Checks if Google Chrome is installed, if not, installs the application.
@@ -22,14 +22,14 @@ If($null -eq $installed) {
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\GoogleChrome" | Out-Null
 
-# Copies NetExtender.msi to newly created folder
+# Copies Google Chrome setup file to newly created folder
 Copy-Item -Path "$PSScriptRoot\googlechromestandaloneenterprise64.msi" -Destination "C:\MDM\GoogleChrome\googlechromestandaloneenterprise64.msi"
 
-#This installs SonicWall NetExtender. Note, this does a restart! If you perform /norestart the file will not install correct.
+#This installs Google Chrome. 
 MsiExec /i "C:\MDM\GoogleChrome\googlechromestandaloneenterprise64.msi" /qn
 
 # Wait for the installation of Google Chrome to deploy. 
-Start-Sleep -s 60
+Start-Sleep -s 30
 
 # Removes Google Chrome setup folder from main MDM folder. 
 Remove-Item "C:\MDM\GoogleChrome\" -Force -Recurse

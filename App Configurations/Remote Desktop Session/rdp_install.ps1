@@ -19,6 +19,9 @@ $installed = (Get-ChildItem "C:\RDP_Sessions\QuoteWerks\QuoteWerks.rdp")
 
 If($null -eq $installed) {
 
+# Creates new folder on C: Drive to host setup files
+New-Item -ItemType Directory -Force -Path "C:\RDP_Sessions\QuoteWerks" | Out-Null
+
 # Copies RDP session file onto desktop.
 Copy-Item -Path "$PSScriptRoot\QuoteWerks.rdp" -Destination "C:\RDP_Sessions\QuoteWerks\QuoteWerks.rdp"
 

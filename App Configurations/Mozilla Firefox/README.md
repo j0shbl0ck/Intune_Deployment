@@ -15,7 +15,7 @@ Source File: firefox_install.ps1
 ----------------------------
 Program setup:
 - Install Commmand: ```powershell -ex bypass -file firefox_install.ps1```
-- Uninstall Command: ```powershell -ex bypass -file uninstall.ps1``` 
+- Uninstall Command: ```powershell -ex bypass -file firefox_uninstall.ps1``` 
 
 Detection rules:
 - Path: C:\Program Files\Mozilla Firefox\

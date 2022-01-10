@@ -9,5 +9,5 @@ This runs the Advanced IP Scanner setup file onto specified device(s).
 ----------------------------
 Program setup:
 - Command-line arugments: --
-- Desktop Command-line script if desired: ```msiexec.exe /i "C:\Users\username\Downloads\ip_scan_en_us_Release_x.x.xxxx.msi" /qn```
+- Desktop Command-line script not required, but IF DESIRED: ```msiexec.exe /i "C:\Users\username\Downloads\ip_scan_en_us_Release_x.x.xxxx.msi" /qn```
 

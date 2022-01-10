@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 01.10.22
     Type: Public
     Source: --
@@ -23,7 +23,7 @@ If($null -eq $installed) {
 New-Item -ItemType Directory -Force -Path "C:\MDM\MozillaFirefox" | Out-Null
 
 # Copies Mozilla Firefox setup file into newly created folder. Note, you will need to change version. 
-Copy-Item -Path "$PSScriptRoot\googlechromestandaloneenterprise64.msi" -Destination "C:\MDM\MozillaFirefox\Firefox Setup 95.0.2.msi"
+Copy-Item -Path "$PSScriptRoot\Firefox Setup 95.0.2.msi" -Destination "C:\MDM\MozillaFirefox\Firefox Setup 95.0.2.msi"
 
 #This installs Mozilla Firefox. Note, you will need to change version.
 MsiExec /i "C:\MDM\MozillaFirefox\Firefox Setup 95.0.2.msi" /qn

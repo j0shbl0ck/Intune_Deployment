@@ -5,7 +5,7 @@
     Version: 1.0.0
     Date: 01.10.22
     Type: Public
-    Source: https://support.mozilla.org/en-US/kb/silently-install-uninstall-firefox-enterprise
+    Source: https://silentinstallhq.com/adobe-reader-dc-silent-install-how-to-guide/
     Description: Uninstall Adobe Reader DC without restart.
     =============================================================================
 #>

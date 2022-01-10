@@ -13,14 +13,14 @@
 #>
 
 # Checks if RDP Session is present on device
-$installed = (Get-ChildItem "C:\RDP_Sessions\QuoteWerks.rdp")
+$installed = (Get-ChildItem "C:\RDP_Sessions\QuoteWerks\QuoteWerks.rdp")
 
 ## BEGIN IF ELSE STATEMENT
 
 If($null -eq $installed) {
 
 # Copies RDP session file onto desktop.
-Copy-Item -Path "$PSScriptRoot\QuoteWerks.rdp" -Destination "C:\RDP_Sessions\QuoteWerks.rdp"
+Copy-Item -Path "$PSScriptRoot\QuoteWerks.rdp" -Destination "C:\RDP_Sessions\QuoteWerks\QuoteWerks.rdp"
 
 } else {
     # This shuts down powershell, if application is already installed.

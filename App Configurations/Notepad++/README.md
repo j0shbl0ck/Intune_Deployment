@@ -14,7 +14,7 @@ Source File: install.ps1
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:
-- Install command: ```powershell -ex bypass -file install.ps1```
+- Install command: ```powershell -ex bypass -file np_install.ps1```
 - Uninstall command: ```powershell -ex bypass -file uninstall.ps1```
 
 Detection rules:

@@ -6,10 +6,8 @@
     Date: 01.10.22
     Type: Public
     Source: --
-    Description: Checks if Adobe Reader DC is installed, if not, installs the application.
+    Description: Checks if Adobe Reader DC is installed, if not, application is then installed. 
     =============================================================================
-    .README
-    Please resort to README.md for additional file setup. 
 #>
 
 # Checks File Explorer if Adobe Reader DC is present on device

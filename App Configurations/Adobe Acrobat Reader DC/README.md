@@ -1,7 +1,7 @@
 [Win 32 App]
 
 This runs the Adobe Acrobat Reader DC setup silently with no prompts or special configuration.  
-1. Download the latest version of Adobe Acrobat Reader DC: https://get.adobe.com/reader/
+1. Download the latest version of Adobe Acrobat Reader DC: https://get.adobe.com/reader/enterprise/
 2. Wrap the file via IntuneWinAppUtil
 
 **INTUNE APPLICATION SETUP**

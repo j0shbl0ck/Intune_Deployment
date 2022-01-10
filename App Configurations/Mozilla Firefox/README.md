@@ -1,6 +1,6 @@
 [Win 32 App]
 
-This deploys the Google Chrome Enterprise application. First checks if Google Chrome is alreayd installed prior.   
+This deploys the Mozilla Firefox Enterprise application. First checks if Mozilla Firefox is already installed prior.   
 1. Go to https://www.mozilla.org/en-US/firefox/all/#product-desktop-release 
 2. Download .MSI version of Mozilla Firefox. 
 3. Put together scripts and .msi in folder to begin Intune wrapping.

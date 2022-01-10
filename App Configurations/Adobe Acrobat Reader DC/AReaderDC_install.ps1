@@ -23,7 +23,7 @@ If($null -eq $installed) {
 New-Item -ItemType Directory -Force -Path "C:\MDM\AdobeReaderDC" | Out-Null
 
 # Copies Adobe Reader DC setup file into newly created folder. Note, you will need to change version. 
-Copy-Item -Path "$PSScriptRoot\Firefox Setup 95.0.2.msi" -Destination "C:\MDM\AdobeReaderDC\AcroRdrDC2100720099_en_US.exe"
+Copy-Item -Path "$PSScriptRoot\AcroRdrDC2100720099_en_US.exe" -Destination "C:\MDM\AdobeReaderDC\AcroRdrDC2100720099_en_US.exe"
 
 #This installs Adobe Reader DC. Note, you will need to change version.
 Start-Process -FilePath "C:\MDM\AdobeReaderDC\AcroRdrDC2100720099_en_US.exe" -ArgumentList "/sAll /rs /rps /msi /norestart /quiet EULA_ACCEPT=YES"

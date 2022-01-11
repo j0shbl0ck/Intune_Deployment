@@ -27,7 +27,7 @@ Copy-Item -Path "$PSScriptRoot\AcroRdrDC2100720099_en_US.exe" -Destination "C:\M
 Start-Process -FilePath "C:\MDM\AdobeReaderDC\AcroRdrDC2100720099_en_US.exe" -ArgumentList "/sAll /rs /rps /msi /norestart /quiet EULA_ACCEPT=YES"
 
 # Wait for the installation of Adobe Reader DC to deploy. 
-Start-Sleep -s 60
+Start-Sleep -s 180
 
 # Removes Adobe Reader DC setup folder from main MDM folder. 
 Remove-Item "C:\MDM\AdobeReaderDC\" -Force -Recurse

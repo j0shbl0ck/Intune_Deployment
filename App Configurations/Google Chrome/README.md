@@ -15,7 +15,7 @@ Source File: chrome_install.ps1
 ----------------------------
 Program setup:
 - Install Commmand: ```powershell -ex bypass -file chrome_install.ps1```
-- Uninstall Command: ```powershell -ex bypass -file uninstall.ps1``` 
+- Uninstall Command: ```powershell -ex bypass -file chrome_uninstall.ps1``` 
 
 Detection rules:
 - Path: C:\Program Files\Google\Chrome\Application\

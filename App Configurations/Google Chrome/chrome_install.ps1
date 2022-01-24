@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.3
+    Version: 1.0.4
     Date: 01.10.22
     Type: Public
     Source: --
@@ -18,7 +18,7 @@ $pathtwo = (Get-ChildItem "C:\Program Files (x86)\Google\Chrome\Application\chro
 
 ## BEGIN IF ELSE STATEMENT
 
-If($null -eq $pathone -or $pathtwo) {
+If($null -eq $pathone -or $null -eq $pathtwo) {
 
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\GoogleChrome" | Out-Null

@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 01.10.22
     Type: Public
     Source: --
@@ -13,11 +13,12 @@
 #>
 
 # Checks File Explorer if Google Chrome is present on device
-$installed = (Get-ChildItem "C:\Program Files\Google\Chrome\Application\chrome.exe") 
+$pathone = (Get-ChildItem "C:\Program Files\Google\Chrome\Application\chrome.exe") 
+$pathtwo = (Get-ChildItem "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 
 ## BEGIN IF ELSE STATEMENT
 
-If($null -eq $installed) {
+If($null -eq $pathone -or $pathtwo) {
 
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\GoogleChrome" | Out-Null

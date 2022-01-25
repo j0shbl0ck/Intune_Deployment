@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.3
+    Version: 1.0.4
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -19,10 +19,16 @@
 $pathone = (Get-ChildItem "C:\Program Files\Google\Chrome\Application\chrome.exe") 
 $pathtwo = (Get-ChildItem "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 
-IF ((Test-Path $pathone) -or (Test-Path $pathtwo)) {
-    Write-Host "Google Chrome has been found"
-    exit $LASTEXITCODE
-} else {
+if (-not(Test-Path -Path $pathone -PathType Leaf)) {
     Write-Host "Google Chrome has not been found"
-    exit $LASTEXITCODE
+    Exit 1
+    }
+
+elseif (-not(Test-Path -Path $pathtwo -PathType Leaf)) {
+    Write-Host "Google Chrome has not been found"
+    Exit 1
+    }
+else {
+    Write-Host "Google Chrome has been found"
+    Exit 0
 }

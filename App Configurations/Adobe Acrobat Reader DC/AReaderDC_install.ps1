@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 01.10.22
     Type: Public
     Source: --
@@ -11,11 +11,12 @@
 #>
 
 # Checks File Explorer if Adobe Reader DC is present on device
-$installed = (Get-ChildItem "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe") 
+$pathone = (Get-ChildItem "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe") 
+$pathtwo = (Get-ChildItem "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe")
 
 ## BEGIN IF ELSE STATEMENT
 
-If($null -eq $installed) {
+If($null -eq $pathone -or $null -eq $pathtwo) {
 
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\AdobeReaderDC" | Out-Null
@@ -36,3 +37,4 @@ Remove-Item "C:\MDM\AdobeReaderDC\" -Force -Recurse
     # This shuts down powershell, if application is already installed.
     stop-process -ID $PID 
 }
+

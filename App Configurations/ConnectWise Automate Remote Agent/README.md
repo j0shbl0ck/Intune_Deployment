@@ -7,5 +7,5 @@ Provided documentation on how to install ConnectWise Automate Remote Agent for s
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:
-- Command-line arguments: ```/quiet /norestart SERVERADDRESS=https://<company>.hostedrmm.com SERVERPASS=<enter server pass> LOCATION=<enter location #>``` 
+- Command-line arguments: ```/quiet /norestart SERVERADDRESS=https://<company>.hostedrmm.com SERVERPASS=<enter server password> LOCATION=<enter location #>``` 
 - Example: ```/quiet /norestart SERVERADDRESS=https://contoso.hostedrmm.com SERVERPASS=X10X10X10X10 LOCATION=2``` 

@@ -21,15 +21,15 @@ $pathone = (Get-ChildItem "C:\Program Files\Google\Chrome\Application\chrome.exe
 $pathtwo = (Get-ChildItem "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 
 if (-not(Test-Path -Path $pathone -PathType Leaf)) {
-    Write-Host "Google Chrome has not been found"
+    Write-Output "Google Chrome has not been found"
     Exit 1
     }
 
 elseif (-not(Test-Path -Path $pathtwo -PathType Leaf)) {
-    Write-Host "Google Chrome has not been found"
+    Write-Output "Google Chrome has not been found"
     Exit 1
     }
 else {
-    Write-Host "Google Chrome has been found"
+    Write-Output "Google Chrome has been found"
     Exit 0
 }

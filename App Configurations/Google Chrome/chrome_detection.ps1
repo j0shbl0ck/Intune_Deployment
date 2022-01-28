@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.7
+    Version: 1.0.8
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -15,6 +15,7 @@
     Please resort to README.md for additional file setup. 
 #>
 
+Set-ExecutionPolicy -ExecutionPolicy Bypass
 
 # Checks File Explorer if Google Chrome is present on device
 $pathone = "C:\Program Files\Google\Chrome\Application\chrome.exe" 

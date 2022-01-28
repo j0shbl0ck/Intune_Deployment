@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.8
+    Version: 1.1.0
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -15,18 +15,16 @@
     Please resort to README.md for additional file setup. 
 #>
 
-Set-ExecutionPolicy -ExecutionPolicy Bypass
-
 # Checks File Explorer if Google Chrome is present on device
 $pathone = "C:\Program Files\Google\Chrome\Application\chrome.exe" 
 $pathtwo = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 
-if (-not(Test-Path -LiteralPath $pathone -PathType Leaf)) {
+
+If($null -eq $pathone -or $null -eq $pathtwo) {
+
     Write-Output "Google Chrome has not been found"
     Exit 1;
-    } elseif(-not(Test-Path -LiteralPath $pathtwo -PathType Leaf)) {
-    Write-Output "Google Chrome has not been found"
-    Exit 1;
+
     } else {
     Write-Output "Google Chrome has been found"
     Exit 0;

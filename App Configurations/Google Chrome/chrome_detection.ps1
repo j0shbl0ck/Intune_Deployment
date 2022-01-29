@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.2.2
+    Version: 1.2.3
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -16,14 +16,17 @@
 #>
 
 # Checks File Explorer if Google Chrome is present on device
-$pathone = "$env:ProgramFiles\Google\Chrome\Application\chrome.exe"
-#$pathtwo = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 
-if ((Test-Path $pathone)){
+<# This code is not working
+
+$pathone = "$env:ProgramFiles\Google\Chrome\Application\chrome.exe"
+$pathtwo = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+
+if ((Test-Path $pathone) -or (Test-Path $pathtwo)){
     $true
     Exit 0
 } else {}
-
+#>
 
 <#
 This code is currently working??
@@ -38,3 +41,23 @@ else {
 }
 #>
 
+try
+{  
+
+$chromeInstalled = Test-Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe'
+
+if ($chromeInstalled -eq 'True') {
+    Write-Host "Google Chrome is installed"
+    exit 1
+    }
+    else {
+        #No remediation required    
+        Write-Host "Google Chrome is not installed"
+        exit 0
+    }  
+}
+catch {
+    $errMsg = $_.Exception.Message
+    Write-Error $errMsg
+    exit 1
+}

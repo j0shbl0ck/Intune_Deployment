@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.2.1
+    Version: 1.2.2
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -21,6 +21,7 @@ $pathone = "$env:ProgramFiles\Google\Chrome\Application\chrome.exe"
 
 if ((Test-Path $pathone)){
     $true
+    Exit 0
 } else {}
 
 

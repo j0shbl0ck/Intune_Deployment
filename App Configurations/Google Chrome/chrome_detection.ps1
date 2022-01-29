@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.1.2
+    Version: 1.1.3
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -20,11 +20,11 @@ $pathone = Test-Path -Path "C:\Program Files\Google\Chrome\Application\chrome.ex
 $pathtwo = Test-Path -Path "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -PathType Leaf
 
 if ($pathone -eq $true -or $pathtwo -eq $true ) {
-    Write-Output "Google Chrome has been found"
-    Exit 0
+    Write-Host "Google Chrome has been found"
+    #Exit 0
     }
 
 else {
-    Write-Output "Google Chrome has not been found"
-    Exit 1
+    Write-Error "Google Chrome has not been found"
+    #Exit 1
 }

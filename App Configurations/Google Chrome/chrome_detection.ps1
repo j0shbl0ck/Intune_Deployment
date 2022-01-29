@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.1.9
+    Version: 1.2.0
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -16,8 +16,8 @@
 #>
 
 # Checks File Explorer if Google Chrome is present on device
-$pathone = "$env:ProgramFiles\Google\Chrome\Application\chrome.exe"
-$pathtwo = "${env:ProgramFiles(x86}\Google\Chrome\Application\chrome.exe"
+$pathone = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+$pathtwo = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 
 if ((Test-Path $pathone) -or (Test-Path $pathtwo)){
     $true

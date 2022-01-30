@@ -11,5 +11,6 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file AReaderDC_uninstall.ps1```
 
 Detection rules:
-- Path: C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\
-- File or folder: AcroRd32.exe
+- Rule Type: Registry
+- Kay Path: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\AcroRd32.exe
+- Dectection Method: Key exists

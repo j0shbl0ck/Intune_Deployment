@@ -18,7 +18,13 @@ $pathtwo = (Get-ChildItem "C:\Program Files (x86)\Google\Chrome\Application\chro
 
 ## BEGIN IF ELSE STATEMENT
 
-If($null -eq $pathone -or $null -eq $pathtwo) {
+# Checks File Explorer if Google Chrome is present on device 
+$installed = (Get-ChildItem "C:\Program Files\Google\Chrome\Application\chrome.exe")
+# Checks version and if low enough, installs Google Chrome.  
+$version = Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{0BCD0446-9933-3CF9-B784-9B82FF57B144}' -Name DisplayVersion
+
+## BEGIN IF ELSE STATEMENT
+If($null -eq $installed -or $version -le 87) {
 
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\GoogleChrome" | Out-Null

@@ -2,9 +2,9 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 12.21.21
-    Type: Public
+    Type: Lincoln University
     Source: https://blog.get-ready.net/2019/01/23/microsoft-intune-how-to-configure-sonicwall-netextender-vpn-client/
     Description: This script contains the custom profile needed for SonicWall VPN.
     =============================================================================
@@ -15,8 +15,8 @@
 
 
 Set-Location "C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender"
-$VPNServer = "<enter VPN Server IP Address>"
-$VPNDomainName = "<enter domain>"
+$VPNServer = "150.167.10.250:4433"
+$VPNDomainName = "lincolnu.edu"
 ##$VPNPassword = <insert password> #if you want to provision the password
 ## uncomment the next line if you want the VPN username equal to the computer name
 #$account = $env:computername
@@ -26,7 +26,13 @@ $VPNDomainName = "<enter domain>"
 .\NECLI.exe addprofile -s $VPNServer -d $VPNDomainName
 #.\NECLI.exe addprofile -s $VPNServer -u $account -p $VPNPassword -d $VPNDomainName
 
+# Kills NetExtender service, so the profile can populate when end-user starts application
+Stop-Process -Name "NEGui" -Force
+
 # Removes new NetExtender folder path.
 Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Create_Profile.bat" -Recurse -Force -Confirm:$false
+Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\runinstall.bat" -Recurse -Force -Confirm:$false -ErrorAction SilentlyContinue
 Remove-Item -Path "C:\MDM\SonicWallNetExtender" -Recurse -Force -Confirm:$false
+
+
 

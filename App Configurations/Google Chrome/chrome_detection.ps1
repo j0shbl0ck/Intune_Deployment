@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.2.3
+    Version: 1.2.4 
     Date: 01.10.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
@@ -48,12 +48,12 @@ $chromeInstalled = Test-Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Ap
 
 if ($chromeInstalled -eq 'True') {
     Write-Host "Google Chrome is installed"
-    exit 1
+    exit 0
     }
     else {
         #No remediation required    
         Write-Host "Google Chrome is not installed"
-        exit 0
+        exit 1
     }  
 }
 catch {

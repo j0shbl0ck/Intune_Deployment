@@ -18,9 +18,10 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file chrome_uninstall.ps1``` 
 
 Detection rules:
-- Custom script: chrome_detection.ps1 or 
-- Path: C:\Program Files\Google\Chrome\Application\
-- File or folder: chrome.exe
+- Rule Type: Registry
+- Kay Path: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe
+- Dectection Method: Key exists
+
 
 
 

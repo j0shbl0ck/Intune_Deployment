@@ -4,7 +4,7 @@
     Author: j0shbl0ck https://github.com/j0shbl0ck
     Version: 1.0.3
     Date: 12.21.21
-    Type: Lincoln University
+    Type: Public
     Source: https://blog.get-ready.net/2019/01/23/microsoft-intune-how-to-configure-sonicwall-netextender-vpn-client/
     Description: This script contains the custom profile needed for SonicWall VPN.
     =============================================================================
@@ -15,8 +15,8 @@
 
 
 Set-Location "C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender"
-$VPNServer = "150.167.10.250:4433"
-$VPNDomainName = "lincolnu.edu"
+$VPNServer = "<enter IP address"
+$VPNDomainName = "<enter domain name>"
 ##$VPNPassword = <insert password> #if you want to provision the password
 ## uncomment the next line if you want the VPN username equal to the computer name
 #$account = $env:computername

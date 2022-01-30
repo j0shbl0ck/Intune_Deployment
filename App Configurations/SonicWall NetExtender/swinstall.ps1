@@ -4,7 +4,7 @@
     Author: j0shbl0ck https://github.com/j0shbl0ck
     Version: 1.0.6
     Date: 12.21.21
-    Type: Lincoln University
+    Type: Public
     Source: https://stackoverflow.com/questions/50274909/unattended-silent-install-notepad  CHANGEEEE
     Source: https://adamtheautomator.com/powershell-check-if-file-exists/
     Source: https://www.educba.com/else-if-in-powershell/  [Flowchart If/ elseif if condition]

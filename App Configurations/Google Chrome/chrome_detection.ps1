@@ -3,7 +3,7 @@
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
     Version: 1.2.4 
-    Date: 01.10.22
+    Date: 01.29.22
     Type: Public
     Source One: https://euc365.com/creating-intune-win32-apps/
     Source Two: https://techcommunity.microsoft.com/t5/microsoft-intune/intune-custom-detection-script/m-p/2976839

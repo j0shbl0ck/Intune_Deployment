@@ -6,15 +6,15 @@ This runs the SonicWall NetExtender setup file and custom profile onto specified
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------
-Source Folder: Folder path containing all five files. 
+Source Folder: Folder path containing all six files. 
 
-Source File: install.ps1
+Source File: swinstall.ps1
 
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:
-- Install Commmand: ```powershell -ex bypass -file install.ps1```
-- Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
+- Install Commmand: ```powershell -ex bypass -file swinstall.ps1```
+- Uninstall Command: ```powershell -ex bypass -file swuninstall.ps1```
 
 Detection rules:
 - Path: C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender\

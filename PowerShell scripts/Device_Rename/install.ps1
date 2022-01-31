@@ -16,6 +16,8 @@
     =============================================================================
 #>
 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
+
 #Creates new folder "Createlnk"
 New-Item -ItemType Directory -Force -Path "C:\MDM\DeviceRename" | Out-Null
 

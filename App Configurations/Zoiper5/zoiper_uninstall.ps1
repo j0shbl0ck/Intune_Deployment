@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.50
+    Version: 1.0.1
     Date: 01.31.22
     Type: Public
     Source: --
@@ -13,4 +13,5 @@
 #>
 
 # Removes Notepad++ through uninstall.exe provided in source files. 
-start-process -FilePath "C:\Program Files (x86)\Zoiper5\Uninstall.exe" -ArgumentList '/S' -Verb runas -Wait
+$cmdprompt = ""%ProgramFiles(x86)%\Zoiper5\Uninstall.exe" --mode unattended --unattendedmodeui none"
+cmd.exe /c $cmdprompt

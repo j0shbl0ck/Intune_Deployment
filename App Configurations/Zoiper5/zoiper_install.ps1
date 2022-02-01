@@ -32,7 +32,7 @@ Copy-Item -Path "$PSScriptRoot\zoiper_batinstall.bat" -Destination "C:\MDM\Zoipe
 #This installs Zoiper. 
 cmd.exe /c "C:\MDM\Zoiper\zoiper_batinstall.bat" -WindowStyle Hidden
 
-# Wait for the installation of Google Chrome to deploy. 
+# Wait for the installation of Zoiper to deploy. 
 Start-Sleep -s 25
 
 # Removes Zoiper setup folder from main MDM folder. 

@@ -2,7 +2,7 @@
 
 This runs the SonicWall NetExtender setup file and custom profile onto specified device(s).  
 1. Download the latest version of SonicWall NetExtender: https://www.mysonicwall.com/muir/freedownloads
-2. Wrap the three powershell scripts, setup file, and batch file via IntuneWinAppUtil
+2. Wrap the three powershell scripts, setup file, and two batch files via IntuneWinAppUtil
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------

@@ -13,8 +13,8 @@ Source File: install.ps1
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:
-- Install Commmand: ```powershell -ex bypass -file install.ps1```
-- Uninstall Command: ```powershell -ex bypass -file uninstall.ps1```
+- Install Commmand: ```powershell -ex bypass -file rename_install.ps1```
+- Uninstall Command: ```powershell -ex bypass -file rename_uninstall.ps1```
 
 Detection rules:
 

@@ -6,7 +6,7 @@
     Date: 02.17.22
     Type: Public
     Source: https://docs.microsoft.com/en-us/mem/intune/apps/apps-win32-troubleshoot#detecting-the-win32-app-file-version-by-using-powershell
-    Description: Checks if Adobe Acrobat Reader DC is installed, if not, installs the application.
+    Description: Checks if Adobe Acrobat Reader DC is installed.
     =============================================================================
     .README
     Please resort to README.md for additional file setup. 

@@ -11,6 +11,7 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file AReaderDC_uninstall.ps1```
 
 Detection rules:
-- Rule Type: Registry
-- Kay Path: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\AcroRd32.exe
-- Dectection Method: Key exists
+- Rule Type: Use custom detection script
+- Script file: AReaderDC_detection.ps1
+- Run as 32bit: No
+- Enforce script signature: No

@@ -25,7 +25,6 @@ Connect-MgGraph -Scopes `
         "GroupMember.ReadWrite.All", `
         "DeviceManagementManagedDevices.ReadWrite.All"
 
-
 # Get the device ID from the Intune Device ID
 $deviceId = '12345678-1234-1234-1234-123456789012'
 
@@ -36,5 +35,7 @@ $params = @{
 
 # Invoke the device action
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
+
+
 
 

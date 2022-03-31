@@ -26,6 +26,7 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 ## Get Device Compliance Policy ID
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
+5f8b326f-c086-401f-b0cc-139befd1ac27
 
 ## Get Device Compliance Device Status ID
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceStatuses
@@ -37,12 +38,14 @@ https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/5f8b3
 https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceStatuses
 
 
-
-https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/5f8b326f-c086-401f-b0cc-139befd1ac27/managedDevices/cabb30dd-6d54-40aa-83c3-ed467fe92458
+                                                                                                                               c6c78124-8124-c6c7-2481-c7c62481c7c6
+https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/5f8b326f-c086-401f-b0cc-139befd1ac27/deviceStatuses/62d71434-443d-47b6-b36d-3b251fb73d58_5f8b326f-c086-401f-b0cc-139befd1ac27_cabb30dd-6d54-40aa-83c3-ed467fe92458
 https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/cabb30dd-6d54-40aa-83c3-ed467fe92458
 
 PATCH /deviceManagement/deviceCompliancePolicies/5f8b326f-c086-401f-b0cc-139befd1ac27/deviceStatuses/{deviceComplianceDeviceStatusId}
 
+
+https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/5f8b326f-c086-401f-b0cc-139befd1ac27/deviceStatuses
 
 ?$filter=deviceDisplayName eq 'AH--00022803AH'&$count=true
 
@@ -51,8 +54,8 @@ Connect-MgGraph -Scopes `
         "User.ReadWrite.All", `
         "Group.ReadWrite.All", `
         "GroupMember.ReadWrite.All", `
-        "DeviceManagementManagedDevices.ReadWrite.All"
-        "DeviceManagementConfiguration.Read.All"
+        "DeviceManagementManagedDevices.ReadWrite.All", `
+        "DeviceManagementConfiguration.Read.All", `
         "DeviceManagementConfiguration.ReadWrite.All"
 
 # Get the device ID from the Intune Device ID

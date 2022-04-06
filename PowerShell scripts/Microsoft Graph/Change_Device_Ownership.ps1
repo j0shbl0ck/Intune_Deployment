@@ -3,7 +3,7 @@
     This script pulls from Microsoft Graph to change device ownership in Intune
 .DESCRIPTION
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.1
+    Version: 1.0.2
     Date: 03.30.22
     Type: Public
 .NOTES
@@ -19,11 +19,7 @@
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Connect-MgGraph -Scopes `
-        "User.ReadWrite.All", `
-        "Group.ReadWrite.All", `
-        "GroupMember.ReadWrite.All", `
-        "DeviceManagementManagedDevices.ReadWrite.All"
+Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All","GroupMember.ReadWrite.All","DeviceManagementManagedDevices.ReadWrite.All", "Device.Read.All"
 
 # Get the device ID from the Intune Device ID
 $deviceId = '12345678-1234-1234-1234-123456789012'

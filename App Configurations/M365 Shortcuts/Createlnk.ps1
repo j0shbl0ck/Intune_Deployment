@@ -2,10 +2,10 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.1
+    Version: 1.0.2
     Date: 12.17.21
     Type: Public
-    Source: -https://www.pdq.com/blog/pdq-deploy-and-powershell/
+    Source: https://www.pdq.com/blog/pdq-deploy-and-powershell/
     Description: This creates local desktop shortcuts of the M365 products.
     =============================================================================
     To find the source file location, please refer to creating a custom start menu. 
@@ -18,7 +18,7 @@
 
 #Creates Outlook shortcut on the desktop.
 $SourceFileLocation = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Outlook.lnk"
-$ShortcutLocation = "$env:USERPROFILE\Desktop\Outlook.lnk"
+$ShortcutLocation = "C:\Users\Public\Desktop\Outlook.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)
 $Shortcut.TargetPath = $SourceFileLocation
@@ -26,7 +26,7 @@ $Shortcut.Save()
 
 #Creates Excel shortcut on the desktop.
 $SourceFileLocation = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Excel.lnk"
-$ShortcutLocation = "$env:USERPROFILE\Desktop\Excel.lnk"
+$ShortcutLocation = "C:\Users\Public\Desktop\Excel.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)
 $Shortcut.TargetPath = $SourceFileLocation
@@ -34,7 +34,7 @@ $Shortcut.Save()
 
 #Creates Word shortcut on the desktop.
 $SourceFileLocation = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Word.lnk"
-$ShortcutLocation = "$env:USERPROFILE\Desktop\Word.lnk"
+$ShortcutLocation = "C:\Users\Public\Desktop\Word.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)
 $Shortcut.TargetPath = $SourceFileLocation
@@ -42,7 +42,7 @@ $Shortcut.Save()
 
 #Creates PowerPoint shortcut on the desktop.
 $SourceFileLocation = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PowerPoint.lnk"
-$ShortcutLocation = "$env:USERPROFILE\Desktop\PowerPoint.lnk"
+$ShortcutLocation = "C:\Users\Desktop\PowerPoint.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)
 $Shortcut.TargetPath = $SourceFileLocation

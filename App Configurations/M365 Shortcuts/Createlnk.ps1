@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 12.17.21
     Type: Public
     Source: https://www.pdq.com/blog/pdq-deploy-and-powershell/
@@ -42,7 +42,7 @@ $Shortcut.Save()
 
 #Creates PowerPoint shortcut on the desktop.
 $SourceFileLocation = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PowerPoint.lnk"
-$ShortcutLocation = "C:\Users\Desktop\PowerPoint.lnk"
+$ShortcutLocation = "C:\Users\Public\Desktop\PowerPoint.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)
 $Shortcut.TargetPath = $SourceFileLocation

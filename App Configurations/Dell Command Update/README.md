@@ -4,7 +4,7 @@ Provided documentation on how to install Dell Command Updates. You will need to 
 1. Go to https://www.dell.com/support/kbdoc/en-us/000177325/dell-command-update
 2. Open PowerShell as admin, and redirect to the Folder where the, Dell-Command-Update-Application_XXXXX_WIN_x.x.x_A00.EXE is.
 3. Run: ```.\Dell-Command-Update-Windows-Universal-Application_XXXX_WIN_x.x.x_A00.EXE /s /e=C:\DELLCOMMAND\```
-4. Navigate to After extracting .exe (DellCommandUpdateApp_Setup.exe) begin Intune wrapping.
+4. Navigate to C:\DELLCOMMAND after extracting .exe to find the file, DellCommandUpdateApp_Setup.exe and then begin Intune wrapping.
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------

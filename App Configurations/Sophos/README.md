@@ -14,7 +14,7 @@ Source File: SophosSetup.exe
 ----------------------------
 Program setup:
 - Install Commmand: ```SophosSetup.exe --products=antivirus,intercept --quiet```
-- Uninstall Command: ```%ProgramFiles%\Sophos\Sophos Endpoint Agent\uninstallcli.exe```
+- Uninstall Command: ```MsiExec.exe /X{0EA5323F-DE1B-480C-911E-7827E5EA20E9}```
 
 Detection rules:
 - Path: %ProgramFiles%\Sophos\Sophos UI

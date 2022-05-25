@@ -3,7 +3,7 @@
     This script installs ConnectWise Control onto device.
     Author: Josh Block
 .NOTES
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 05.25.22
     Type: Public
 .LINK
@@ -12,11 +12,11 @@
 #>
 
 # Checks File Explorer if Google Chrome is present on device
-$installed = (Get-ChildItem "C:\Program Files\Notepad++\notepad++.exe") 
+$installed = (Test-Path "C:\Program Files (x86)\ScreenConnect Client*")  
 
 ## BEGIN IF ELSE STATEMENT
 
-If($null -eq $installed) {
+If($false -eq $installed) {
 
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\ConnectWise_Control" | Out-Null

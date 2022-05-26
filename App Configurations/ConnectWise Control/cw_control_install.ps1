@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-    This script installs ConnectWise Control onto device.
+    This script installs ConnectWise Control onto the device. 
     Author: Josh Block
 .NOTES
-    Version: 1.0.1
+    Version: 1.0.2
     Date: 05.25.22
     Type: Public
 .LINK
@@ -21,16 +21,16 @@ If($false -eq $installed) {
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\ConnectWise_Control" | Out-Null
 
-# Copies setup file onto device into newly created folder
+# Copies setup file onto device into newly created folder - rename MSI setup file
 Copy-Item -Path "$PSScriptRoot\IFT_CW_Control.msi" -Destination "C:\MDM\ConnectWise_Control\IFT_CW_Control.msi"
 
-# Uses PowerShell to run scripts contained in source folder
+# Uses PowerShell to run scripts contained in source folder - rename MSI setup file
 Start-Process msiexec.exe -Wait -ArgumentList '/I C:\MDM\ConnectWise_Control\IFT_CW_Control.msi /quiet'
 
-# Wait for the installation of Google Chrome to deploy. 
+# Wait for the installation of ConnectWise Control to deploy. 
 Start-Sleep -s 60
 
-# Removes Google Chrome setup folder from main MDM folder. 
+# Removes ConnnectWise Control setup folder from main MDM folder. 
 Remove-Item "C:\MDM\ConnectWise_Control" -Force -Recurse
 
 } else {

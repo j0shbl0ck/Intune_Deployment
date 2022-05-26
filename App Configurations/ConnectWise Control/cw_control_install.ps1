@@ -3,7 +3,7 @@
     This script installs ConnectWise Control onto the device. 
     Author: Josh Block
 .NOTES
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 05.25.22
     Type: Public
 .LINK
@@ -11,7 +11,7 @@
     https://silentinstallhq.com/connectwise-control-screenconnect-silent-install-how-to-guide/
 #>
 
-# Checks File Explorer if Google Chrome is present on device
+# Checks File Explorer if ConnectWise Control is present on device
 $installed = (Test-Path "C:\Program Files (x86)\ScreenConnect Client*")  
 
 ## BEGIN IF ELSE STATEMENT

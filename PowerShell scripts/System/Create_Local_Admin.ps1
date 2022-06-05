@@ -1,12 +1,11 @@
 ﻿<#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.3
+.SYNOPSIS
+    This script creates a localadmin account on the device. Use .\ to login into system.
+    Author: Josh Block
+.NOTES
+    Version: 1.0.4
     Date: 12.21.21
     Type: Public
-    Source: 
-    Description: Creates local admin onto device. Use .\ to login into system. 
     =============================================================================
     For Intune Purposes
     -------------------
@@ -19,6 +18,8 @@
     Run script in 64 bit PowerShell Host
         - Yes
     =============================================================================
+.LINK
+    https://github.com/j0shbl0ck
 #>
 
 ## For new PS scripters, leave the qoutes, but replace <text>.

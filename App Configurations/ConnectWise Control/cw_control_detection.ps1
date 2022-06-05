@@ -3,7 +3,7 @@
     This script checks if ConnectWise Control was installed on the device.
     Author: Josh Block
 .NOTES
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 05.25.22
     Type: Public
 .LINK
@@ -11,10 +11,10 @@
     https://docs.microsoft.com/en-us/mem/intune/apps/apps-win32-troubleshoot#detecting-the-win32-app-file-version-by-using-powershell
 #>
 
-# File path to AARC 64bit location
+# File path to CWC 64bit location
 $pathone = Test-path "${env:ProgramFiles}\ScreenConnect Client*"
 
-# File path to AARC 64bit location
+# File path to CWV 32bit location
 $pathtwo = Test-path "${env:ProgramFiles(x86)}\ScreenConnect Client*"
 
 # Get's host name of device

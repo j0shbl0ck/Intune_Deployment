@@ -1,7 +1,17 @@
-ConnectWise Manage Client
+[Win 32 App]
 
-To install the latest version, click [here](https://university.connectwise.com/University/PageView.aspx?short_name=workstation-installation) 
+This installs ConnectWise Manage (64-bit) silently with no prompts or special configuration.  
+1. Download the latest version of ConnectWise Manage [here](https://university.connectwise.com/University/PageView.aspx?short_name=workstation-installation) 
+2. Wrap the file and scripts via IntuneWinAppUtil
 
-(64-bit) Newest file path "C:\Program Files\ConnectWise\PSA.net\ConnectWiseManage.exe"
+**INTUNE APPLICATION SETUP**
+----------------------------
+Program setup:
+- Install Commmand: ```powershell -ex bypass -file cwm_install.ps1```
+- Uninstall Command: ```powershell -ex bypass -file cwm_uninstall.ps1```
 
-(32-bit) Old file path "C:\Program Files (x86)\ConnectWise\PSA.net\ConnectWiseManage.exe" 
+Detection rules:
+- Rule Type: Use custom detection script
+- Script file: cwm_detection.ps1
+- Run as 32bit: No
+- Enforce script signature: No

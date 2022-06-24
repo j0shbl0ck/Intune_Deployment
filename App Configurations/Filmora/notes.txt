@@ -1,7 +1,0 @@
-u/dr_donkz 
-
-
-
-After a lot of trying i did manage to get a version which after a local install left a .exe installer which did actually accept the /VERYSILENT switch named filmora_64bit_11.0.2_gray_full846.exe, located in C:\Users\Public\Documents\Wondershare
-
-If you run the local installer for filmora gray 11, it dumps an installation file in your c:/users/public/documents/wondershare folder. This installer was actually accepting the command /very silent, so I uploaded it using the win32 content prep tool

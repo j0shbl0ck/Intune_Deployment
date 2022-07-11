@@ -1,15 +1,15 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+.SYNOPSIS
+    Checks if Advanced IP Scanner is installed, if not, installs the application.
+.NOTES
+    Author: Josh Block
     Date: 07.11.22
     Type: Public
-    Source: --
-    Description: Checks if Advanced IP Scanner is installed, if not, installs the application.
-    =============================================================================
-    .README
+    Version: 1.0.0
+    ======================================================
     Please resort to README.md for additional file setup. 
+.LINK
+    https://github.com/j0shbl0ck
 #>
 
 

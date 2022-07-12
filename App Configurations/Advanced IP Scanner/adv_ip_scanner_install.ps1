@@ -5,7 +5,7 @@
     Author: Josh Block
     Date: 07.11.22
     Type: Public
-    Version: 1.0.0
+    Version: 1.0.1
     ======================================================
     Please resort to README.md for additional file setup. 
 .LINK
@@ -25,10 +25,10 @@ If($null -eq $installed) {
 New-Item -ItemType Directory -Force -Path "C:\MDM\AdvIPScanner" | Out-Null
 
 # Copies Advanced IP Scanner setup file to newly created folder - Change file version to match version of application
-Copy-Item -Path "$PSScriptRoot\ip_scan_en_us_Release_2.5.3850.msi" -Destination "C:\MDM\AdvIPScanner\ip_scan_en_us_Release_2.5.3850.msi"
+Copy-Item -Path "$PSScriptRoot\ip_scan_en_us_Release_2.5.4594.1.msi" -Destination "C:\MDM\AdvIPScanner\ip_scan_en_us_Release_2.5.4594.1.msi"
 
 #This installs Advanced IP Scanner - Change file version to match version of application
-MsiExec /i "C:\MDM\AdvIPScanner\ip_scan_en_us_Release_2.5.3850.msi" /qn
+MsiExec /i "C:\MDM\AdvIPScanner\ip_scan_en_us_Release_2.5.4594.1.msi" /qn
 
 # Wait for the installation of Advanced IP Scanner to deploy. 
 Start-Sleep -s 30

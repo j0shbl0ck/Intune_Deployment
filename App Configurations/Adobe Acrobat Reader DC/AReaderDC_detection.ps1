@@ -1,15 +1,15 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
+.SYNOPSIS
+    Checks if Adobe Acrobat Reader DC is installed. Please resort to README.md for additional file setup. 
+    Author: Josh Block
+.NOTES
     Version: 1.0.1
     Date: 02.17.22
     Type: Public
-    Source: https://docs.microsoft.com/en-us/mem/intune/apps/apps-win32-troubleshoot#detecting-the-win32-app-file-version-by-using-powershell
-    Description: Checks if Adobe Acrobat Reader DC is installed.
-    =============================================================================
-    .README
-    Please resort to README.md for additional file setup. 
+.LINK
+    https://github.com/j0shbl0ck
+    https://silentinstallhq.com/adobe-reader-dc-silent-install-how-to-guide/
+    https://docs.microsoft.com/en-us/mem/intune/apps/apps-win32-troubleshoot#detecting-the-win32-app-file-version-by-using-powershell
 #>
 
 # File path to AARC 64bit location

@@ -1,13 +1,14 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
+.SYNOPSIS
+    Checks if Adobe Reader DC is installed, if not, application is then installed. 
+    Author: Josh Block
+.NOTES
     Version: 1.0.1
     Date: 01.10.22
     Type: Public
-    Source: --
-    Description: Checks if Adobe Reader DC is installed, if not, application is then installed. 
-    =============================================================================
+.LINK
+    https://github.com/j0shbl0ck
+    https://silentinstallhq.com/adobe-reader-dc-silent-install-how-to-guide/
 #>
 
 # Checks File Explorer if Adobe Reader DC is present on device

@@ -1,13 +1,14 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
+.SYNOPSIS
+    Uninstall Adobe Reader DC without restart.
+    Author: Josh Block
+.NOTES
     Version: 1.0.0
     Date: 01.10.22
     Type: Public
-    Source: https://silentinstallhq.com/adobe-reader-dc-silent-install-how-to-guide/
-    Description: Uninstall Adobe Reader DC without restart.
-    =============================================================================
+.LINK
+    https://github.com/j0shbl0ck
+    https://silentinstallhq.com/adobe-reader-dc-silent-install-how-to-guide/
 #>
 
 #Removes Adobe Reader DC by product code.

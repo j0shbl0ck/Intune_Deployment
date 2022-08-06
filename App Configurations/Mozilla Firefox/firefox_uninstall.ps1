@@ -1,13 +1,14 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+.SYNOPSIS
+    Unistall Mozilla Firefox without restart.
+    Author: Josh Block
+.NOTES
+    Version: 1.0.2
     Date: 01.10.22
     Type: Public
-    Source: https://support.mozilla.org/en-US/kb/silently-install-uninstall-firefox-enterprise
-    Description: Unistall Mozilla Firefox without restart.
-    =============================================================================
+.LINK
+    https://github.com/j0shbl0ck
+    https://support.mozilla.org/en-US/kb/silently-install-uninstall-firefox-enterprise
 #>
 
 #Removes Mozilla Firefox by helper.exe.

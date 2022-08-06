@@ -1,1 +1,1 @@
-This folder contains PowerShell scripts that can be readily accessible to anyone. 
+This folder contains PowerShell scripts that can be readily accessible to anyone. All code is, **"AS IS"**, with no liability to a device that may use these scripts. Please test and use appropriately.

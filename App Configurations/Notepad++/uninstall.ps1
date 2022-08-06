@@ -1,13 +1,14 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
+.SYNOPSIS
+    Removes Notepad++ from device.
+    Author: Josh Block
+.NOTES
     Version: 1.0.1
     Date: 12.29.21
     Type: Public
-    Source: --
-    Description: Removes Notepad++ from device.
-    =============================================================================
+.LINK
+    https://github.com/j0shbl0ck
+    https://stackoverflow.com/questions/50274909/unattended-silent-install-notepad
 #>
 
 # Removes Notepad++ through uninstall.exe provided in source files. 

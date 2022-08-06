@@ -1,15 +1,14 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
+.SYNOPSIS
+    Checks if Mozilla Firefox is installed, if not, installs the application.
+    Author: Josh Block
+.NOTES
     Version: 1.0.2
     Date: 01.10.22
     Type: Public
-    Source: --
-    Description: Checks if Mozilla Firefox is installed, if not, installs the application.
-    =============================================================================
-    .README
-    Please resort to README.md for additional file setup. 
+    README: Please resort to README.md for additional file setup. 
+.LINK
+    https://github.com/j0shbl0ck
 #>
 
 # Checks File Explorer if FireFox is present on device

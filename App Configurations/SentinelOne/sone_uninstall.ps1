@@ -3,7 +3,7 @@
     This script uninstalls SentinelOne. You will need to run script as admin with passphrase provided in SentinelOne Admin Console.
     Author: Josh Block
 .NOTES
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 08.01.22
     Type: Public
 .LINK
@@ -35,5 +35,5 @@ Write-Host "Passphrase saved." -ForegroundColor Green
 
 # Uninstall SentinelOne
 Write-Host "Uninstalling SentinelOne..." -ForegroundColor Yellow
-.\uninstall.exe /norestart /q /k=$passphrase
+.\uninstall.exe /uninstall /norestart /q /k $passphrase
 Write-Host "Uninstalled." -ForegroundColor Green

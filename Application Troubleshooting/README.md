@@ -12,3 +12,7 @@ This uninstalls all McAfee bloatware on a device.
 **MicrosoftProgram_Install_and_Uninstall**
 
 This troubleshooter is found [here](https://support.microsoft.com/en-us/topic/fix-problems-that-block-programs-from-being-installed-or-removed-cca7d1b6-65a9-3d98-426b-e9f927e1eb4d). It is used to help repair issues with installing and uninstalling software.
+
+**SetupProd_OffScrub.exe**
+
+This assists in uninstall Office products

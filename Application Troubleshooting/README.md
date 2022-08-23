@@ -15,4 +15,4 @@ This troubleshooter is found [here](https://support.microsoft.com/en-us/topic/fi
 
 **SetupProd_OffScrub.exe**
 
-This assists in uninstall Office products
+This assists in troubleshooting Microsoft-related products.

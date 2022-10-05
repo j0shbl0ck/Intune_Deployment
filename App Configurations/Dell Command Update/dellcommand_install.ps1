@@ -2,7 +2,7 @@
     .NOTES
     =============================================================================
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 05.03.22
     Type: Public
     Source: --
@@ -15,14 +15,11 @@
 New-Item -ItemType Directory -Force -Path "C:\MDM\DellCommand" | Out-Null
 
 # Copies Dell Command Update setup file into newly created folder. Note, you will need to change version. 
-Copy-Item -Path "$PSScriptRoot\DellCommandUpdateApp_Setup.exe" -Destination "C:\MDM\DellCommandUpdateApp_Setup.exe"
+Copy-Item -Path "$PSScriptRoot\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE" -Destination "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE"
 
 #This installs Dell Command Update. Note, you will need to change version.
-Start-Process -FilePath "C:\MDM\DellCommandUpdateApp_Setup.exe" -ArgumentList "/S /v/qn"
+Start-Process -FilePath "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE" -ArgumentList "/S /v/qn"
 
 # Wait for the installation of Dell Command Update to deploy. 
-Start-Sleep -s 180
-
-# Removes Dell Command Update setup folder from main MDM folder. 
-Remove-Item "C:\MDM\AdobeReaderDC\" -Force -Recurse
+Start-Sleep -s 60
 

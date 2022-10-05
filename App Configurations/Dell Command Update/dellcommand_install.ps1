@@ -1,14 +1,15 @@
 <#
-    .NOTES
-    =============================================================================
-    Author: j0shbl0ck https://github.com/j0shbl0ck
+.SYNOPSIS
+    Installs the latest version of Dell Command Update
+    Author: Josh Block
+.NOTES
     Version: 1.0.1
     Date: 05.03.22
     Type: Public
-    Source: --
-    Description: Installs the latest version of Dell Command Update
-    File Location: \DellInc.DellCommandUpdate_4.1.17.0_x86__htrsf667h5kn2\DCU.Classic\DellCommandUpdate.exe
-    =============================================================================
+.LINK
+    https://github.com/j0shbl0ck
+    https://github.com/FlorianSLZ/scloud/tree/main/Program%20-%20win32/Dell%20Command%20Update
+    https://scloud.work/en/dell-driver-intune/
 #>
 
 # Creates new folder on C: Drive to host setup files
@@ -22,4 +23,3 @@ Start-Process -FilePath "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_
 
 # Wait for the installation of Dell Command Update to deploy. 
 Start-Sleep -s 60
-

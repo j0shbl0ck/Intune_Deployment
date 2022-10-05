@@ -18,7 +18,7 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file dellcommand_uninstall.ps1```
 
 Detection rules:
-- Path: C:\Program Files (x86)\Dell\CommandUpdate\
+- Path: ```C:\Program Files (x86)\Dell\CommandUpdate\```
 - File or folder: dcu-cli.exe
 
 

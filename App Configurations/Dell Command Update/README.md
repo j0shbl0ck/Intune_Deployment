@@ -7,15 +7,15 @@ This deploys the Dell Command Update application. First checks if Dell Command U
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------
-Source Folder: Folder path containing DellCommandUpdateApp_Setup.exe. 
+Source Folder: Folder path containing Dell-Command-Update-Application_XXXMC_WIN_X.X.X_X00_0X.EXE 
 
-Source File: DellCommandUpdateApp_Setup.exe
+Source File: dellcommand_install.ps1
 
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:
-- Install Commmand: ```DellCommandUpdateApp_Setup.exe /S /v/qn```
-- Uninstall Command: ```DellCommandUpdateApp_Setup.exe /S /x /v/qn``` 
+- Install Commmand: ```powershell -ex bypass -file dellcommand_install.ps1```
+- Uninstall Command: ```powershell -ex bypass -file dellcommand_uninstall.ps1```
 
 Detection rules:
 - Path: C:\Windows

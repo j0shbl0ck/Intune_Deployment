@@ -18,11 +18,8 @@ Program setup:
 - Uninstall Command: ```powershell -ex bypass -file dellcommand_uninstall.ps1```
 
 Detection rules:
-- Path: C:\Windows
-- File or folder: System32
+- Path: C:\Program Files (x86)\Dell\CommandUpdate\
+- File or folder: dcu-cli.exe
 
-**ADDITIONAL NOTES**
---------------------
-- Yes, the detection rules are set to the Windows folder. Currently unable to find the source file for Dell Command Updates, so I chose a common folder. 
 
 

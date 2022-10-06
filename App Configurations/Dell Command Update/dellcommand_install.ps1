@@ -3,7 +3,7 @@
     Installs the latest version of Dell Command Update
     Author: Josh Block
 .NOTES
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 05.03.22
     Type: Public
 .LINK
@@ -14,8 +14,9 @@
 
 # Checks File Explorer if Dell Command Update is present on device
 $pathone = (Get-ChildItem "C:\Program Files (x86)\Dell\CommandUpdate\dcu-cli.exe")
+$pathtwo = (Get-ChildItem "C:\Program Files\Dell\CommandUpdate\dcu-cli.exe")
 
-If($null -eq $pathone) {
+If($null -eq $pathone -or $null -eq $pathtwo) {
 
     # ======== CREATE NEW FOLDER AND COPY FILES ========
 

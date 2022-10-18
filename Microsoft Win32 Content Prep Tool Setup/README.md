@@ -1,4 +1,7 @@
-Setting up Microsoft Win32 Content Prep Tool.
+# Microsoft Win32 Content Prep Tool Setup
+### This folder contains personalized intruction to setting up Microsoft Win32 Content Prep Tool Setup. All code is, **"AS IS"**, with no liability to a device that may use these scripts. Please test and use appropriately. 
+
+Setting up Microsoft Win32 Content Prep Tool:
 
 1. Download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730)
 2. Create a folder where all Intune wrapping will take place. I chose <b>C:\IntuneWinAppUtil</b>

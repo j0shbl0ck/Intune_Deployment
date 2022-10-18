@@ -1,5 +1,5 @@
-<h1>APPLICATION TROUBLESHOOOTING</h1>
-<p>This folder contains troubleshooting scripts and applications to better assist an admin in removing applications from a device. Applications and scripts are <b>AS IS</b> and provide no libaility to a device.</p>
+# **APPLICATION TROUBLESHOOOTING**
+### This folder contains troubleshooting scripts and applications to better assist an admin in removing applications from a device. Applications and scripts are <b>AS IS</b> and provide no libaility to a device
 
 [**Find_Product_Code.ps1**](https://github.com/j0shbl0ck/Intune_Deployment/blob/master/Application%20Troubleshooting/Find_Product_Code.ps1) 🔽
 

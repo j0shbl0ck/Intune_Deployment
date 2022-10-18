@@ -11,5 +11,15 @@ This folder contains different applications with their documentation and files o
 | `ConnectWise` | Contains deployment scripts and information for Automate Control, Remote Agent, Control, and Manage | 10.17.2022 | 🟢 |
 | `Dell Command Update` | Contains deployment scripts and information for Dell Command Update | 10.17.2022 | 🟢 |
 | `Filmora` | Contains deployment scripts and information for Filmora | 06.24.2022 | 🟡 |
-| `Google Chrome | Contains deployment scripts and information for Google Chrome | 02.17.2022 | 🟢 |
-| `Intel® DSA | Contains deployment scripts and information for Intel® DSA | 06.08.2022 | 🟡 |
+| `Google Chrome` | Contains deployment scripts and information for Google Chrome | 02.17.2022 | 🟢 |
+| `Intel® DSA` | Contains deployment scripts and information for Intel® DSA | 06.08.2022 | 🟡 |
+| `M365 Shortcuts` | Contains deployment scripts and information for M365 Shortcuts | 04.21.2022 | 🟡 |
+| `Mozilla FireFox` | Contains deployment scripts and information for Mozilla FireFox | 08.05.2022 | 🟢 |
+| `Notepad++` | Contains deployment scripts and information for Notepad++ | 08.05.2022 | 🟢 |
+| `Notepad++` | Contains deployment scripts and information for Notepad++ | 08.05.2022 | 🟢 |
+| `Quicken` | Contains deployment scripts and information for Quicken | 08.05.2022 | 🟡 |
+| `Remote Desktop Dession` | Contains deployment scripts and information for Remote Desktop Session | 01.10.2022 | 🟢 |
+| `SentinelOne` | Contains deployment scripts and information for SentinelOne | 08.09.2022 | 🔴 |
+| `SonicWall NetExtender` | Contains deployment scripts and information for SonicWall NetExtender | 02.01.2022 | 🟢 |
+| `Zoiper5` | Contains deployment scripts and information for Zoiper5 | 02.01.2022 | 🟢 |
+

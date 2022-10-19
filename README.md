@@ -8,4 +8,4 @@
 | `App Configurations` | Contains different applications with their documentation and files for Intune |
 | `Application Troubleshooting` | Contains troubleshooting scripts and executables in removing applications |
 | `Microsoft Win32 Content Prep Tool Setup` | Contains personalized intruction to setting up Microsoft Win32 Content Prep Tool Setup |
-| `PowerShell scripts` | Contains PowerShell scripts that can be readily accessible to anyone |
+| `PowerShell Scripts` | Contains PowerShell scripts that can be readily accessible to anyone |

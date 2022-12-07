@@ -3,7 +3,7 @@
     This script creates a localadmin account on the device. Use .\ to login into system.
     Author: Josh Block
 .NOTES
-    Version: 1.0.4
+    Version: 1.0.5
     Date: 12.21.21
     Type: Public
     =============================================================================
@@ -24,6 +24,8 @@
 
 ## For new PS scripters, leave the qoutes, but replace <text>.
 ## Run this script in PowerShell ISE as admin to properly edit the script.
+
+Clear-Host
 
 $ExpectedLocalUser = "<username>"
 $Password = ConvertTo-SecureString '<password>' -AsPlainText -Force

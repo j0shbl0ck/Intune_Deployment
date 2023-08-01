@@ -3,7 +3,7 @@
     This script creates a localadmin account on the device. Use .\ to login into system.
     Author: Josh Block
 .NOTES
-    Version: 1.0.6
+    Version: 1.0.7
     Date: 12.21.21
     Type: Public
     =============================================================================

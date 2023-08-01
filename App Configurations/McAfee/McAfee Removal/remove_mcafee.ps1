@@ -24,7 +24,7 @@ If($null -eq $installed) {
     New-Item -ItemType Directory -Force -Path "C:\temp\MDM\McAfeeRemover" | Out-Null
 
     # Copies MCPR to newly created folder
-    Copy-Item -Path "$PSScriptRoot\MCPR" -Destination "C:\temp\MDM\McAfeeRemover\MCPR"
+    Copy-Item -Path "$PSScriptRoot\MCPR" -Destination "C:\temp\MDM\McAfeeRemover"
 
     #This uninstalls McAfee
     $program= "C:\temp\MDM\McAfeeRemover\MCPR\mccleanup.exe"

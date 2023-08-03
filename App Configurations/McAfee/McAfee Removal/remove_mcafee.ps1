@@ -3,7 +3,7 @@
     This script uninstalls McAfee from Lenovo devices
     Author: Josh Block
 .NOTES
-    Version: 1.0.2
+    Version: 1.0.3
     Date: 08.01.23
     Type: Public
 .LINK
@@ -15,7 +15,7 @@
 New-Item -ItemType Directory -Force -Path "C:\temp\MDM\McAfeeRemover" | Out-Null
 
 # Copies MCPR to newly created folder
-Copy-Item -Path "$PSScriptRoot\MCPR" -Destination "C:\temp\MDM\McAfeeRemover"
+Copy-Item -Path "$PSScriptRoot\MCPR" -Destination "C:\temp\MDM\McAfeeRemover" -Recurse
 
 #This uninstalls McAfee
 $program= "C:\temp\MDM\McAfeeRemover\MCPR\mccleanup.exe"

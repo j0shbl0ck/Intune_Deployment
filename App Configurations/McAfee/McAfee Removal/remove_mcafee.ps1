@@ -3,7 +3,7 @@
     This script uninstalls McAfee from Lenovo devices
     Author: Josh Block
 .NOTES
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 08.01.23
     Type: Public
 .LINK
@@ -15,7 +15,7 @@
 ## BEGIN IF ELSE STATEMENT
 
 # Checks File Explorer if Advanced IP Scanner is present on device 
-$installed = (Get-ChildItem "C:\Program Files (x86)\Advanced IP Scanner v2\advanced_ip_scanner.exe")
+$version = (Get-ItemPropertyValue HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$software -Name DisplayVersion -ErrorAction SilentlyContinue)
 
 ## BEGIN IF ELSE STATEMENT
 If($null -eq $installed) {

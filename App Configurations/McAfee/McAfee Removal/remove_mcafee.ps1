@@ -3,7 +3,7 @@
     This script uninstalls McAfee from Lenovo devices
     Author: Josh Block
 .NOTES
-    Version: 1.0.3
+    Version: 1.0.4
     Date: 08.01.23
     Type: Public
 .LINK
@@ -32,4 +32,5 @@ Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -Match $Remove
 Start-Sleep -s 30
 
 # Removes Advanced IP Scanner setup folder from main MDM folder. 
-Remove-Item "C:\temp\MDM\McAfeeRemover\MCPR" -Force -Recurse -ErrorAction SilentlyContinue
+Remove-Item "C:\Program Files\McAfeeDashboard" -Force -Recurse -ErrorAction SilentlyContinue
+Remove-Item "C:\temp\MDM\McAfeeRemover" -Force -Recurse -ErrorAction SilentlyContinue

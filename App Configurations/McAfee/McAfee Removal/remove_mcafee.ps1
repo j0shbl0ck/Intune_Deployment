@@ -31,7 +31,7 @@ Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -Match $Remove
 # Wait for the uninstallation of McAfee to deploy. 
 Start-Sleep -s 30
 
-# Removes Advanced IP Scanner setup folder from main MDM folder. 
+# Removes relevant McAfee folders
 Remove-Item "C:\Program Files\McAfeeDashboard" -Force -Recurse -ErrorAction SilentlyContinue
 Remove-Item "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\McAfee" -Force -Recurse -ErrorAction SilentlyContinue
 Remove-Item "C:\temp\MDM\McAfeeRemover" -Force -Recurse -ErrorAction SilentlyContinue

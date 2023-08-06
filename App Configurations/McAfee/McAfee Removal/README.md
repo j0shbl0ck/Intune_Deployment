@@ -1,26 +1,31 @@
-[Win 32 App] - TO BE MODIFIED
+[Win 32 App]
 
-This deploys the Google Chrome Enterprise application. First checks if Google Chrome is already installed prior.   
-1. Go to https://chromeenterprise.google/ 
-2. Download .MSI version of Google Chrome. 
-3. Put together scripts and .msi in folder to begin Intune wrapping.
+This removes the pre-installed McAfee application found on Lenovo devices
+1. Download [**MCPR.exe**](https://github.com/j0shbl0ck/Intune_Deployment/blob/master/Application%20Troubleshooting/MCPR.exe) 🔽
+2. Run the .exe but do not continue after the file extraction portion of the setup.exe
+3. Open C:\temp and copy the entire MCPR folder to a new location
+4. Create a new folder called **McAfeeRemover**
+3. Put together script and MCPR in folder to begin Intune wrapping.
 
 **INTUNE WINAPPUTIL SETUP**
 ---------------------
-Source Folder: Folder path containing scripts and .MSI. 
+Source Folder: Folder path containing script and MCPR. 
 
-Source File: chrome_install.ps1
+Source File: remove_mcafee.ps1
 
 **INTUNE APPLICATION SETUP**
 ----------------------------
 Program setup:
-- Install Commmand: ```powershell -ex bypass -file chrome_install.ps1```
-- Uninstall Command: ```powershell -ex bypass -file chrome_uninstall.ps1``` 
+- Install Commmand: ```powershell -ex bypass -file remove_mcafee.ps1```
+- Uninstall Command: ```powershell -ex bypass -file remove_mcafee.ps1``` 
+
+Device restart behavior:
+- Intune will force a mandatory device restart
 
 Detection rules:
 - Rule Type: Registry
-- Kay Path: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe
-- Dectection Method: Key exists
+- Kay Path: HKEY_LOCAL_MACHINE\SOFTWARE\McAfee
+- Dectection Method: Key does not exist
 
 
 

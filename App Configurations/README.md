@@ -15,6 +15,7 @@
 | `Google Chrome` | Contains deployment scripts and information for Google Chrome | 02.17.2022 | 🟢 |
 | `Intel® DSA` | Contains deployment scripts and information for Intel® DSA | 06.08.2022 | 🟡 |
 | `M365 Shortcuts` | Contains deployment scripts and information for M365 Shortcuts | 04.21.2022 | 🟡 |
+| `McAfee` | Contains deployment/removal scripts and information for McAfee | 08.06.2022 | 🟡 |
 | `Mozilla FireFox` | Contains deployment scripts and information for Mozilla FireFox | 08.05.2022 | 🟢 |
 | `Notepad++` | Contains deployment scripts and information for Notepad++ | 08.05.2022 | 🟢 |
 | `Notepad++` | Contains deployment scripts and information for Notepad++ | 08.05.2022 | 🟢 |

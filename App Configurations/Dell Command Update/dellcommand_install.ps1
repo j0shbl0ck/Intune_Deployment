@@ -24,12 +24,12 @@ If($null -eq $pathone -or $null -eq $pathtwo) {
     New-Item -ItemType Directory -Force -Path "C:\MDM\DellCommand" | Out-Null
 
     # Copies Dell Command Update setup file into newly created folder. Note, you will need to change version. 
-    Copy-Item -Path "$PSScriptRoot\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE" -Destination "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE"
+    Copy-Item -Path "$PSScriptRoot\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_03.EXE" -Destination "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE"
 
     # ======== INSTALL DELL COMMAND UPDATE ========
 
     #This installs Dell Command Update. Note, you will need to change version.
-    Start-Process -FilePath "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_02.EXE" -ArgumentList "/S"
+    Start-Process -FilePath "C:\MDM\Dell-Command-Update-Application_8D5MC_WIN_4.3.0_A00_03.EXE" -ArgumentList "/S"
 
     # Wait for the installation of Dell Command Update to deploy. 
     Start-Sleep -s 60

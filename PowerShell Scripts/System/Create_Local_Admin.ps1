@@ -3,7 +3,7 @@
     This script creates a localadmin account on the device. Use .\ to login into system.
     Author: Josh Block
 .NOTES
-    Version: 1.0.8
+    Version: 1.0.9
     Date: 12.21.21
     Type: Public
     =============================================================================
@@ -26,10 +26,8 @@
 ## Run this script in PowerShell ISE as admin to properly edit the script.
 
 param(
-  [Parameter(Mandatory = $true)]
-  [string] $Username = "filler_username",
-  [Parameter(Mandatory = $true)]
-  [string] $Password = "filler_password",
+  [string] $Username = "username",
+  [string] $Password = "password",
   [string] $FullName = "John Doe",
   [string] $Description = "Sample description",
   [string] $GroupName = "Administrators"
@@ -38,7 +36,7 @@ param(
 $SecurePassword = ConvertTo-SecureString $Password -AsPlainText -Force
 
 # Check if user already exists
-$existingUser = Get-LocalUser -Name $Username
+$existingUser = Get-LocalUser -Name $Username -ErrorAction SilentlyContinue
 
 if ($existingUser) {
   if (!(Get-LocalGroupMember -Group $GroupName -Member $Username)) {

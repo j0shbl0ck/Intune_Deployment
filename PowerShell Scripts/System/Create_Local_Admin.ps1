@@ -3,7 +3,7 @@
     This script creates a localadmin account on the device. Use .\ to login into system.
     Author: Josh Block
 .NOTES
-    Version: 1.0.7
+    Version: 1.0.8
     Date: 12.21.21
     Type: Public
     =============================================================================
@@ -25,15 +25,40 @@
 ## For new PS scripters, leave the qoutes, but replace <text>.
 ## Run this script in PowerShell ISE as admin to properly edit the script.
 
-$username = "<text>"
-$password = "<text>"
+param(
+  [Parameter(Mandatory = $true)]
+  [string] $Username = "filler_username",
+  [Parameter(Mandatory = $true)]
+  [string] $Password = "filler_password",
+  [string] $FullName = "John Doe",
+  [string] $Description = "Sample description",
+  [string] $GroupName = "Administrators"
+)
 
-$SecurePassword = ConvertTo-SecureString $password -AsPlainText -Force
+$SecurePassword = ConvertTo-SecureString $Password -AsPlainText -Force
 
-New-LocalUser -Name $username -Password $SecurePassword -FullName "<text>" -Description "<text>"
-Add-LocalGroupMember -Group Administrators -Member $username
+# Check if user already exists
+$existingUser = Get-LocalUser -Name $Username
 
-Write-Host "The new account was created successfully."
+if ($existingUser) {
+  if (!(Get-LocalGroupMember -Group $GroupName -Member $Username)) {
+    Add-LocalGroupMember -Group $GroupName -Member $Username
+    Write-Host "User '$Username' already exists. Added to group '$GroupName' successfully."
+    exit 0 # User found and added to group
+  } else {
+    Write-Host "User '$Username' already exists and is already a member of group '$GroupName'."
+    exit 1 # User found and already in group
+  }
+} else {
+  # Create new user if not found
+  New-LocalUser -Name $Username -Password $SecurePassword -FullName $FullName -Description $Description
+  Add-LocalGroupMember -Group $GroupName -Member $Username
+  Write-Host "The new account '$Username' was created successfully."
+  exit 0 # User created and added to group
+}
+
+exit 2 # Any unexpected error
+
 
 
 

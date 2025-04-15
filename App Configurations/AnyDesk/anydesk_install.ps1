@@ -3,7 +3,7 @@
     This finds any version of AnyDesk installed, and updates it to the latest version.
 .DESCRIPTION
     Author: j0shbl0ck https://github.com/j0shbl0ck
-    Version: 1.0.0
+    Version: 1.0.1
     Date: 04.14.25
     Type: Public
 .NOTES
@@ -19,7 +19,7 @@ $version = (Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*AnyDesk
 
 
 ## BEGIN IF ELSE STATEMENT
-If($null -eq $installed -or $version -le 7.0.15) {
+If($null -eq $installed -or $version -le "7.0.15") {
 
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\LUAnyDesk" | Out-Null

@@ -17,5 +17,5 @@
 # Gets the product code for AnyDesk.
 $identnumb = (Get-CimInstance -Class Win32_Product | Where-Object { $_.Name -like "*AnyDesk*" }).IdentifyingNumber
 
-#Removes Google Chrome by product code.
+#Removes AnyDesk by product code.
 Start-Process 'C:\Windows\System32\msiexec.exe' "/X${identnumb} /qn /norestart" -Wait

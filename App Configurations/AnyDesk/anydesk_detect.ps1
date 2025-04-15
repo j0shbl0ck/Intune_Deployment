@@ -12,7 +12,7 @@
 
 #>
 
-# Checks File Explorer if ANyDesk is present on device 
+# Checks File Explorer if AnyDesk is present on device 
 $installed = (Get-ChildItem "C:\Program Files (x86)\AnyDesk*\AnyDesk*.exe")
 # Checks version and if low enough, installs newer version of AnyDesk.  
 $version = (Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*AnyDesk*" }).Version

@@ -12,7 +12,7 @@
 
 #>
 
-# Checks File Explorer if Google Chrome is present on device 
+# Checks File Explorer if AnyDesk is present on device 
 $installed = (Get-ChildItem "C:\Program Files (x86)\AnyDesk*\AnyDesk*.exe")
 # Checks version and if low enough, installs newer version of AnyDesk.  
 $version = (Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*AnyDesk*" }).Version
@@ -24,16 +24,16 @@ If($null -eq $installed -or $version -le "7.0.15") {
 # Creates new folder on C: Drive to host setup files
 New-Item -ItemType Directory -Force -Path "C:\MDM\LUAnyDesk" | Out-Null
 
-# Copies Google Chrome setup file to newly created folder
+# Copies AnyDesk setup file to newly created folder
 Copy-Item -Path "$PSScriptRoot\LUAnyDesk.msi" -Destination "C:\MDM\LUAnyDesk\LUAnyDesk.msi"
 
-#This installs Google Chrome. 
+#This installs AnyDesk. 
 MsiExec /i "C:\MDM\LUAnyDesk\LUAnyDesk.msi" /qn
 
-# Wait for the installation of Google Chrome to deploy. 
+# Wait for the installation of AnyDesk to deploy. 
 Start-Sleep -s 15
 
-# Removes Google Chrome setup folder from main MDM folder. 
+# Removes AnyDesk setup folder from main MDM folder. 
 Remove-Item "C:\MDM\LUAnyDesk\" -Force -Recurse
 
 } else {

@@ -14,11 +14,8 @@
 # Set the execution policy to bypass
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-# Install package provider NuGet
-Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
-
 # Install the module to run Windows Update
-Install-Module PSWindowsUpdate -Force
+Install-Module -Name PSWindowsUpdate -Confirm:$false
 
 # Import the module to run Windows Update
 Import-Module PSWindowsUpdate
@@ -26,5 +23,5 @@ Import-Module PSWindowsUpdate
 # Check updates with PowerShell
 Get-WindowsUpdate
 
-# Install the available Windows 10 updates
-Install-WindowsUpdate -AcceptAll
+# Install the available Windows updates
+Install-WindowsUpdate -AcceptAll -IgnoreReboot

@@ -3,7 +3,7 @@
     This script updates the Windows system and reboots if needed.
     Author: Josh Block
 .NOTES
-    Version: 1.0.1
+    Version: 1.0.2
     Date: 08.08.23
     Type: Public
 .LINK
